@@ -1,7 +1,8 @@
 import React from 'react'
 import './Web3.css';
-import bitcoin from '../assets/bitcoin.jpg';
-import web3 from  '../assets/web3.jpg';
+import bitcoin from '../..//assets/bitcoin.jpg';
+import web3 from  '../../assets/web3.jpg';
+import TechnologyStackSection from '../TechnologyStack/TechnologyStackSection';
 
 const Web3Page = () => (
     <div style={{ backgroundColor: '#060615', minHeight: '100vh', color: '#ffffff' }}>
@@ -355,6 +356,9 @@ const Web3Page = () => (
                 </div>
             </div>
         </section>
+
+
+        <TechnologyStackSection />
 
 {/* Services Section */}
 <section className="py-5">

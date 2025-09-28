@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HomePage from './Pages/Home.jsx';
-import Web3Page from './Pages/Web3.jsx';
+import Web3Page from './Pages/Web3/Web3.jsx';
+import Web2Page from './Pages/Web2/Web2.jsx';
 import Navbar from './Components/Navbar.jsx';
 
 // Placeholder component for pages that aren't implemented yet
@@ -25,7 +26,7 @@ const App = () => {
       case 'web3':
         return <Web3Page />;
       case 'web2':
-        return <PlaceholderPage title="Web2" />;
+        return <Web2Page />;
       case 'ai':
         return <PlaceholderPage title="AI" />;
       default:
