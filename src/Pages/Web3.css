@@ -15,3 +15,206 @@
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
+/* Updated Technology Stack Card Animations with Bigger Icons */
+.tech-stack-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.tech-stack-card:hover::before {
+  left: 100%;
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  border-color: #ffc107 !important;
+  box-shadow: 
+    0 25px 50px rgba(255, 193, 7, 0.25),
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, #4a5a9a, #2a3a6a) !important;
+}
+
+.tech-stack-card .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-stack-card h4 {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tech-stack-card:hover h4 {
+  transform: scale(1.1);
+  text-shadow: 0 0 20px rgba(255, 193, 7, 0.6);
+}
+
+/* Enhanced Technology Icon Animations for Bigger Icons */
+.tech-icon {
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.tech-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.tech-stack-card:hover .tech-icon {
+  transform: rotateY(360deg) scale(1.15);
+  border-color: rgba(255, 193, 7, 0.5);
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.4),
+    0 0 0 4px rgba(255, 193, 7, 0.2),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.tech-stack-card:hover .tech-icon::after {
+  width: 80px;
+  height: 80px;
+}
+
+.tech-icon i, .tech-icon span {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 3;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.tech-stack-card:hover .tech-icon i,
+.tech-stack-card:hover .tech-icon span {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+/* Pulse animation for bigger icons */
+@keyframes pulse-glow-big {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+  }
+  50% {
+    box-shadow: 
+      0 0 25px rgba(255, 193, 7, 0.8), 
+      0 0 40px rgba(255, 193, 7, 0.4),
+      0 0 0 5px rgba(255, 193, 7, 0.1);
+  }
+}
+
+/* Brand-specific hover effects */
+.tech-stack-card:hover .tech-icon[style*="#f7931a"] {
+  animation: pulse-glow-big 2s infinite;
+  box-shadow: 0 0 20px rgba(247, 147, 26, 0.6) !important;
+}
+
+.tech-stack-card:hover .tech-icon[style*="#627eea"] {
+  animation: pulse-glow-big 2s infinite 0.2s;
+  box-shadow: 0 0 20px rgba(98, 126, 234, 0.6) !important;
+}
+
+.tech-stack-card:hover .tech-icon[style*="#8247e5"] {
+  animation: pulse-glow-big 2s infinite 0.4s;
+  box-shadow: 0 0 20px rgba(130, 71, 229, 0.6) !important;
+}
+
+.tech-stack-card:hover .tech-icon[style*="#61dafb"] {
+  animation: pulse-glow-big 2s infinite 0.6s;
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.6) !important;
+}
+
+.tech-stack-card:hover .tech-icon[style*="#f7df1e"] {
+  animation: pulse-glow-big 2s infinite 0.8s;
+  box-shadow: 0 0 20px rgba(247, 223, 30, 0.6) !important;
+}
+
+/* Enhanced text animations */
+.tech-stack-card small {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tech-stack-card:hover small {
+  color: #ffc107 !important;
+  transform: scale(1.15);
+  text-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
+  font-weight: bold !important;
+}
+
+/* Floating animation for cards */
+@keyframes float-enhanced {
+  0%, 100% {
+    transform: translateY(-15px) scale(1.02);
+  }
+  50% {
+    transform: translateY(-25px) scale(1.02);
+  }
+}
+
+.tech-stack-card:hover {
+  animation: float-enhanced 3s ease-in-out infinite;
+}
+
+/* Staggered hover effect for bigger icons */
+.tech-stack-card:hover .tech-icon:nth-child(1) { transition-delay: 0.1s; }
+.tech-stack-card:hover .tech-icon:nth-child(2) { transition-delay: 0.15s; }
+.tech-stack-card:hover .tech-icon:nth-child(3) { transition-delay: 0.2s; }
+.tech-stack-card:hover .tech-icon:nth-child(4) { transition-delay: 0.25s; }
+.tech-stack-card:hover .tech-icon:nth-child(5) { transition-delay: 0.3s; }
+.tech-stack-card:hover .tech-icon:nth-child(6) { transition-delay: 0.35s; }
+
+/* Enhanced glowing border effect */
+.tech-stack-card {
+  border: 2px solid transparent;
+  background: linear-gradient(#3a4a7a, #3a4a7a) padding-box,
+              linear-gradient(45deg, transparent, transparent) border-box;
+}
+
+.tech-stack-card:hover {
+  background: linear-gradient(145deg, #4a5a9a, #2a3a6a) padding-box,
+              linear-gradient(45deg, #ffc107, #ff8f00, #ffc107) border-box;
+}
+
+/* Section title enhancement */
+.tech-stack-title {
+  transition: all 0.3s ease;
+}
+
+.tech-stack-title:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+}
+
+/* Responsive adjustments for bigger icons */
+@media (max-width: 768px) {
+  .tech-icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .tech-icon i, .tech-icon span {
+    font-size: 18px !important;
+  }
+}
