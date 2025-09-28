@@ -1,0 +1,17 @@
+.delivery-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffc107 !important;
+  box-shadow: 0 15px 35px rgba(255, 193, 7, 0.3);
+  background: linear-gradient(145deg, #1a1a3a, #2a2a4a) !important;
+}
+
+.delivery-card:hover .btn-primary {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.delivery-card:hover svg {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

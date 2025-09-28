@@ -1,4 +1,5 @@
 import React from 'react'
+import './Web3.css';
 
 const Web3Page = () => (
     <div style={{ backgroundColor: '#060615', minHeight: '100vh', color: '#ffffff' }}>
@@ -56,6 +57,304 @@ const Web3Page = () => (
           </div>
         </div>
       </section>
+
+      {/* What We Deliver Section */}
+<section className="py-5">
+  <div className="container">
+    <div className="text-center mb-5">
+      <h2 className="display-5 fw-bold mb-4">What We Deliver</h2>
+      <p className="lead" style={{ color: '#cccccc', maxWidth: '900px', margin: '0 auto' }}>
+        The cost and timeline for a specific project depend on the technical specification and expected 
+        load. Below are approximate prices and development times. For some services we already have 
+        ready-made solutions that help you save budget and time, launching the project as quickly as 
+        possible and at a favorable price
+      </p>
+    </div>
+    
+    {/* Row 1 */}
+    <div className="row g-4 mb-4">
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#ffc107" opacity="0.2"/>
+                <path d="M24 8L32 16L24 24L16 16L24 8Z" fill="#ffc107"/>
+                <circle cx="24" cy="32" r="4" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">Tokenization Rails (RWA / Utility / Revenue-Share)</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Compliance-ready Contracts → investor onboarding → Payouts & analytics in 4-6
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              Book a 20-min build audit to scope your token launch.
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="12" width="32" height="24" rx="4" fill="#ffc107" opacity="0.2"/>
+                <path d="M12 16H36V20H12V16Z" fill="#ffc107"/>
+                <path d="M12 24H28V28H12V24Z" fill="#ffc107"/>
+                <circle cx="36" cy="26" r="3" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">Smart Contract Development (+ Audit Liaison)</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Solidity/Rust contracts with tests, simulations, and audit-ready reports; optional third-party audit.
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              Get a fixed quote and test plan this week.
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="6" y="12" width="36" height="24" rx="6" fill="#ffc107" opacity="0.2"/>
+                <rect x="10" y="16" width="28" height="4" rx="2" fill="#ffc107"/>
+                <rect x="10" y="24" width="20" height="4" rx="2" fill="#ffc107"/>
+                <circle cx="38" cy="20" r="2" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">Account Abstraction Wallets (AA)</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Passkey/social logins, sponsored gas, recovery—Web2-simple UX on-chain.
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              See a live demo and integration plan for your app.
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="8" width="32" height="32" rx="8" fill="#ffc107" opacity="0.2"/>
+                <path d="M16 20H32V24H16V20Z" fill="#ffc107"/>
+                <circle cx="20" cy="30" r="2" fill="#ffc107"/>
+                <circle cx="28" cy="30" r="2" fill="#ffc107"/>
+                <path d="M18 14H30L28 18H20L18 14Z" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">On-Chain Payments & Settlement</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Stablecoin rails, invoicing, reconciliation dashboards, and treasury ops that cut costs.
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              Calculate your savings in a free payments consult.
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {/* Row 2 */}
+    <div className="row g-4 mb-5">
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="16" fill="#ffc107" opacity="0.2"/>
+                <path d="M16 24L24 16L32 24L24 32L16 24Z" fill="#ffc107"/>
+                <circle cx="24" cy="24" r="4" fill="#1a1a3a"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">DEX / Perp DEX (AMM Or Orderbook)</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Liquidity design, staking, fee switches, and governance wired for revenue—not just TVL.
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              Request our DEX mechanics workbook + timeline.
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="6" y="6" width="36" height="36" rx="8" fill="#ffc107" opacity="0.2"/>
+                <path d="M12 18H36V22H12V18Z" fill="#ffc107"/>
+                <circle cx="18" cy="30" r="3" fill="#ffc107"/>
+                <circle cx="30" cy="30" r="3" fill="#ffc107"/>
+                <path d="M14 12H34V16H14V12Z" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">Centralized Exchange (Lean CEX Starter)</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Custody integrations, KYC/AML, liquidity routing, and admin ops—live in 4-6 weeks.
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              Get the feature matrix and compliance checklist.
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="18" fill="#ffc107" opacity="0.2"/>
+                <path d="M18 20L30 20L28 16L20 16L18 20Z" fill="#ffc107"/>
+                <rect x="20" y="24" width="8" height="8" rx="2" fill="#ffc107"/>
+                <circle cx="16" cy="32" r="2" fill="#ffc107"/>
+                <circle cx="32" cy="32" r="2" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">DePIN & Telegram Mini-Apps</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Device/agent rewards, pools of useful work, and Telegram growth loops that actually retain.
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              Share your use case—leave with a 2-week pilot plan.
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div className="col-lg-3 col-md-6">
+        <div 
+          className="card h-100 border border-primary p-4 delivery-card"
+          style={{ 
+            backgroundColor: '#1a1a3a',
+            borderRadius: '15px',
+            transition: 'all 0.3s ease',
+            cursor: 'pointer'
+          }}
+        >
+          <div className="card-body text-center">
+            <div className="mb-4">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect x="8" y="8" width="32" height="32" rx="6" fill="#ffc107" opacity="0.2"/>
+                <path d="M16 16L32 16L30 20L18 20L16 16Z" fill="#ffc107"/>
+                <rect x="20" y="24" width="8" height="8" rx="4" fill="#ffc107"/>
+                <circle cx="24" cy="34" r="2" fill="#ffc107"/>
+              </svg>
+            </div>
+            <h4 className="card-title text-white mb-3">NFT Programs & Loyalty</h4>
+            <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+              Minting engines, gated utilities, and on-chain perks that drive repeat actions (not vanity drops).
+            </p>
+            <button 
+              className="btn btn-primary w-100"
+              style={{ borderRadius: '10px' }}
+            >
+              See 3 program archetypes and their ROI math.
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {/* CTA Button */}
+    <div className="text-center">
+      <button 
+        className="btn btn-primary btn-lg px-5 py-3"
+        style={{ borderRadius: '10px' }}
+      >
+        Discuss the project →
+      </button>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Services Section */}
       <section className="py-5">
