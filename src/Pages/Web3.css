@@ -16,205 +16,251 @@
   transition: transform 0.3s ease;
 }
 
-/* Updated Technology Stack Card Animations with Bigger Icons */
-.tech-stack-card {
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+/* Add this to your Web3.css file for enhanced services section */
+
+/* Service Cards */
+.service-card {
   position: relative;
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
   overflow: hidden;
+  border: 2px solid transparent;
+  background: linear-gradient(#1a1a3a, #1a1a3a) padding-box,
+              linear-gradient(45deg, transparent, transparent) border-box;
 }
 
-.tech-stack-card::before {
+.service-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.1), transparent);
-  transition: left 0.6s ease;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.8s ease;
+  z-index: 1;
 }
 
-.tech-stack-card:hover::before {
+.service-card:hover::before {
   left: 100%;
 }
 
-.tech-stack-card:hover {
+.service-card:hover {
   transform: translateY(-15px) scale(1.02);
-  border-color: #ffc107 !important;
+  border-color: #ffc107;
   box-shadow: 
-    0 25px 50px rgba(255, 193, 7, 0.25),
-    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 25px 50px rgba(255, 193, 7, 0.3),
+    0 15px 35px rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  background: linear-gradient(145deg, #4a5a9a, #2a3a6a) !important;
+  background: linear-gradient(145deg, #2a2a4a, #1a1a3a) padding-box,
+              linear-gradient(45deg, #ffc107, #ff8f00, #ffc107) border-box;
 }
 
-.tech-stack-card .card-body {
+/* Service Icon Container */
+.service-icon-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
 
-.tech-stack-card h4 {
-  transition: all 0.3s ease;
+.service-icon-wrapper {
   position: relative;
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.tech-stack-card:hover h4 {
-  transform: scale(1.1);
-  text-shadow: 0 0 20px rgba(255, 193, 7, 0.6);
-}
-
-/* Enhanced Technology Icon Animations for Bigger Icons */
-.tech-icon {
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  position: relative;
-  overflow: hidden;
-  border: 2px solid transparent;
-}
-
-.tech-icon::after {
+.service-icon-wrapper::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s ease;
-}
-
-.tech-stack-card:hover .tech-icon {
-  transform: rotateY(360deg) scale(1.15);
-  border-color: rgba(255, 193, 7, 0.5);
-  box-shadow: 
-    0 12px 30px rgba(0, 0, 0, 0.4),
-    0 0 0 4px rgba(255, 193, 7, 0.2),
-    inset 0 2px 10px rgba(255, 255, 255, 0.1);
-}
-
-.tech-stack-card:hover .tech-icon::after {
   width: 80px;
   height: 80px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s ease;
+  z-index: -1;
 }
 
-.tech-icon i, .tech-icon span {
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 3;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+.service-card:hover .service-icon-wrapper::before {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
-.tech-stack-card:hover .tech-icon i,
-.tech-stack-card:hover .tech-icon span {
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-  transform: scale(1.1);
+/* Service Icon */
+.service-icon {
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
-/* Pulse animation for bigger icons */
-@keyframes pulse-glow-big {
+.service-card:hover .service-icon {
+  transform: rotateY(360deg) scale(1.1);
+  filter: 
+    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 0 20px rgba(255, 193, 7, 0.4));
+}
+
+/* Icon Glow Animation */
+@keyframes icon-glow {
   0%, 100% {
-    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+    filter: 
+      drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4))
+      drop-shadow(0 0 20px rgba(255, 193, 7, 0.4));
   }
   50% {
-    box-shadow: 
-      0 0 25px rgba(255, 193, 7, 0.8), 
-      0 0 40px rgba(255, 193, 7, 0.4),
-      0 0 0 5px rgba(255, 193, 7, 0.1);
+    filter: 
+      drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4))
+      drop-shadow(0 0 30px rgba(255, 193, 7, 0.6))
+      drop-shadow(0 0 40px rgba(255, 193, 7, 0.2));
   }
 }
 
-/* Brand-specific hover effects */
-.tech-stack-card:hover .tech-icon[style*="#f7931a"] {
-  animation: pulse-glow-big 2s infinite;
-  box-shadow: 0 0 20px rgba(247, 147, 26, 0.6) !important;
+.service-card:hover .service-icon {
+  animation: icon-glow 2s ease-in-out infinite;
 }
 
-.tech-stack-card:hover .tech-icon[style*="#627eea"] {
-  animation: pulse-glow-big 2s infinite 0.2s;
-  box-shadow: 0 0 20px rgba(98, 126, 234, 0.6) !important;
+/* Service Title */
+.service-title {
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
 }
 
-.tech-stack-card:hover .tech-icon[style*="#8247e5"] {
-  animation: pulse-glow-big 2s infinite 0.4s;
-  box-shadow: 0 0 20px rgba(130, 71, 229, 0.6) !important;
+.service-card:hover .service-title {
+  color: #ffc107 !important;
+  transform: scale(1.05);
+  text-shadow: 
+    0 0 20px rgba(255, 193, 7, 0.6),
+    0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.tech-stack-card:hover .tech-icon[style*="#61dafb"] {
-  animation: pulse-glow-big 2s infinite 0.6s;
-  box-shadow: 0 0 20px rgba(97, 218, 251, 0.6) !important;
-}
-
-.tech-stack-card:hover .tech-icon[style*="#f7df1e"] {
-  animation: pulse-glow-big 2s infinite 0.8s;
-  box-shadow: 0 0 20px rgba(247, 223, 30, 0.6) !important;
-}
-
-/* Enhanced text animations */
-.tech-stack-card small {
+/* Service Description */
+.service-description {
   transition: all 0.3s ease;
   position: relative;
+  z-index: 2;
 }
 
-.tech-stack-card:hover small {
-  color: #ffc107 !important;
-  transform: scale(1.15);
-  text-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
-  font-weight: bold !important;
+.service-card:hover .service-description {
+  color: #e6e6e6 !important;
+  transform: translateY(-2px);
 }
 
-/* Floating animation for cards */
-@keyframes float-enhanced {
+/* Hover Overlay Effect */
+.service-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 193, 7, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-card:hover .service-hover-overlay {
+  opacity: 1;
+}
+
+/* Floating Animation */
+@keyframes float-service {
   0%, 100% {
     transform: translateY(-15px) scale(1.02);
   }
   50% {
-    transform: translateY(-25px) scale(1.02);
+    transform: translateY(-20px) scale(1.02);
   }
 }
 
-.tech-stack-card:hover {
-  animation: float-enhanced 3s ease-in-out infinite;
+.service-card:hover {
+  animation: float-service 3s ease-in-out infinite;
 }
 
-/* Staggered hover effect for bigger icons */
-.tech-stack-card:hover .tech-icon:nth-child(1) { transition-delay: 0.1s; }
-.tech-stack-card:hover .tech-icon:nth-child(2) { transition-delay: 0.15s; }
-.tech-stack-card:hover .tech-icon:nth-child(3) { transition-delay: 0.2s; }
-.tech-stack-card:hover .tech-icon:nth-child(4) { transition-delay: 0.25s; }
-.tech-stack-card:hover .tech-icon:nth-child(5) { transition-delay: 0.3s; }
-.tech-stack-card:hover .tech-icon:nth-child(6) { transition-delay: 0.35s; }
+/* Staggered Animation Delays */
+.service-card:nth-child(1) { transition-delay: 0.1s; }
+.service-card:nth-child(2) { transition-delay: 0.2s; }
+.service-card:nth-child(3) { transition-delay: 0.3s; }
+.service-card:nth-child(4) { transition-delay: 0.4s; }
+.service-card:nth-child(5) { transition-delay: 0.5s; }
+.service-card:nth-child(6) { transition-delay: 0.6s; }
 
-/* Enhanced glowing border effect */
-.tech-stack-card {
-  border: 2px solid transparent;
-  background: linear-gradient(#3a4a7a, #3a4a7a) padding-box,
-              linear-gradient(45deg, transparent, transparent) border-box;
-}
+/* Pulse ring effect removed as requested */
 
-.tech-stack-card:hover {
-  background: linear-gradient(145deg, #4a5a9a, #2a3a6a) padding-box,
-              linear-gradient(45deg, #ffc107, #ff8f00, #ffc107) border-box;
-}
-
-/* Section title enhancement */
-.tech-stack-title {
+/* SVG Path Animations */
+.service-icon path,
+.service-icon circle,
+.service-icon rect {
   transition: all 0.3s ease;
 }
 
-.tech-stack-title:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+.service-card:hover .service-icon path {
+  animation: draw-path 1.5s ease-in-out;
 }
 
-/* Responsive adjustments for bigger icons */
-@media (max-width: 768px) {
-  .tech-icon {
-    width: 50px !important;
-    height: 50px !important;
+@keyframes draw-path {
+  0% {
+    stroke-dasharray: 0 100;
   }
-  
-  .tech-icon i, .tech-icon span {
-    font-size: 18px !important;
+  100% {
+    stroke-dasharray: 100 0;
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-card {
+    margin-bottom: 2rem;
+  }
+  
+  .service-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  
+  .service-icon-wrapper::before,
+  .service-icon-wrapper::after {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card:hover {
+    transform: translateY(-10px) scale(1.01);
+  }
+  
+  .service-icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+/* Card Entrance Animation */
+@keyframes card-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.service-card {
+  animation: card-entrance 0.8s ease-out forwards;
+}
+
+/* Staggered entrance animation */
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+.service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(5) { animation-delay: 0.5s; }
+.service-card:nth-child(6) { animation-delay: 0.6s; }

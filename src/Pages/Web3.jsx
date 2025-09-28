@@ -354,653 +354,196 @@ const Web3Page = () => (
             </div>
         </section>
 
-        {/* Technology Stack Section with Original Brand Colors */}
-        <section className="py-5">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-4 tech-stack-title">TECHNOLOGY STACK</h2>
-                    <p className="lead" style={{ color: '#cccccc' }}>
-                        We use cutting-edge technologies, honing our expertise every day
+{/* Services Section */}
+<section className="py-5">
+    <div className="container">
+        <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-3">Our Web3 Services</h2>
+            <p className="lead" style={{ color: '#cccccc' }}>
+                Complete blockchain solutions from smart contracts to decentralized applications
+            </p>
+        </div>
+        <div className="row g-4">
+            <div className="col-lg-4 col-md-6">
+                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                    <div className="service-icon-container mb-4">
+                        <div className="service-icon-wrapper">
+                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#gradient1)" opacity="0.2"/>
+                                <path d="M30 35h40v5H30v-5zm0 10h40v5H30v-5zm0 10h30v5H30v-5z" fill="url(#gradient1)"/>
+                                <path d="M25 25h50v50H25V25zm5 5v40h40V30H30z" fill="url(#gradient1)" stroke="url(#gradient1)" strokeWidth="1"/>
+                                <circle cx="65" cy="30" r="8" fill="url(#gradient1)"/>
+                                <path d="M60 27l3 3 6-6" stroke="white" strokeWidth="2" fill="none"/>
+                                <defs>
+                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#667eea"/>
+                                        <stop offset="100%" stopColor="#764ba2"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 className="service-title text-white mb-3">Smart Contracts</h4>
+                    <p className="service-description" style={{ color: '#cccccc' }}>
+                        Develop secure, audited smart contracts that automate business processes and ensure transparency in transactions.
                     </p>
-                    <h3 className="text-warning mb-5">Blockchain</h3>
-                </div>
-
-                {/* Top Row - Blockchain */}
-                <div className="row g-4 mb-5">
-                    {/* Chains */}
-                    <div className="col-lg-4">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Chains</h4>
-                                <div className="row g-3">
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#f7931a', borderRadius: '50%' }}>
-                                                <img
-                                                    src="https://www.citypng.com/public/uploads/preview/hd-black-round-btc-logo-icon-png-701751695055062bu18prgeot.png"
-                                                    //alt="Bitcoin"
-                                                    style={{ width: '45px', height: '45px', objectFit: 'contain' }}
-                                                />
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">BTC</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#627eea', borderRadius: '50%' }}>
-                                                <i className="fab fa-ethereum text-white" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">ETH</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#8247e5', borderRadius: '50%' }}>
-                                                <svg width="30" height="30" viewBox="0 0 38 33" fill="white">
-                                                    <path d="M29 10.2c-.7-.4-1.6-.4-2.4 0L21 13.5l-3.8 2.1-5.5 3.3c-.7.4-1.6.4-2.4 0L5 16.3c-.7-.4-1.2-1.2-1.2-2.1v-5c0-.8.4-1.6 1.2-2.1l4.3-2.5c.7-.4 1.6-.4 2.4 0L16 7.2c.7.4 1.2 1.2 1.2 2.1v3.3l3.8-2.2V7c0-.8-.4-1.6-1.2-2.1l-8-4.7c-.7-.4-1.6-.4-2.4 0L1.2 5C.4 5.4 0 6.2 0 7v9.4c0 .8.4 1.6 1.2 2.1l8.1 4.7c.7.4 1.6.4 2.4 0l5.5-3.2 3.8-2.2 5.5-3.2c.7-.4 1.6-.4 2.4 0l4.3 2.5c.7.4 1.2 1.2 1.2 2.1v5c0 .8-.4 1.6-1.2 2.1L29 26.5c-.7.4-1.6.4-2.4 0l-4.3-2.5c-.7-.4-1.2-1.2-1.2-2.1V19l-3.8 2.2v3.3c0 .8.4 1.6 1.2 2.1l8.1 4.7c.7.4 1.6.4 2.4 0l8.1-4.7c.7-.4 1.2-1.2 1.2-2.1V15c0-.8-.4-1.6-1.2-2.1L29 10.2z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Polygon</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: 'linear-gradient(135deg, #9945ff, #14f195)', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>S</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">SOL</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#f3ba2f', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-dark" style={{ fontSize: '18px' }}>B</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">BSC</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#0088cc', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>T</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">TON</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#ff0013', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>T</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Tron</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#ff6600', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>M</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">XMR</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Tools */}
-                    <div className="col-lg-4">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Tools</h4>
-                                <div className="row g-3">
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#f16822', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '14px' }}>W3</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Web3.js</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#2535aa', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>E</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Ethers.js</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: 'linear-gradient(135deg, #41873f, #3f8b3d)', borderRadius: '50%' }}>
-                                                <i className="fab fa-node-js text-white" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Node.JS</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#3aac59', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>C</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Chia</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#fff04d', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-dark" style={{ fontSize: '18px' }}>H</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Hardhat</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#5e464d', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>T</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Truffle</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Services */}
-                    <div className="col-lg-4">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Services</h4>
-                                <div className="row g-3">
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#0364ff', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>W</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Web3auth</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#2081e2', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>O</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Opensea</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#68d391', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>C</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Coingecko</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#041e42', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>M</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Moralis</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#ff5722', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>I</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Infura</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#f6851b', borderRadius: '50%' }}>
-                                                <i className="fas fa-wallet text-white" style={{ fontSize: '20px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">MetaMask</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Bottom Row - Web, Mobile, Database */}
-                <div className="row g-4 mb-5">
-                    {/* Web */}
-                    <div className="col-lg-4">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Web</h4>
-                                <div className="row g-3">
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#3178c6', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '14px' }}>TS</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">TypeScript</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#61dafb', borderRadius: '50%' }}>
-                                                <i className="fab fa-react text-dark" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">React</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#f7df1e', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-dark" style={{ fontSize: '14px' }}>JS</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">JavaScript</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#000000', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>N</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Next.js</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#764abc', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>R</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Redux</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#663399', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>G</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Gatsby</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Mobile Development */}
-                    <div className="col-lg-4">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Mobile development</h4>
-                                <div className="row g-3 justify-content-center">
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#61dafb', borderRadius: '50%' }}>
-                                                <i className="fab fa-react text-dark" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">React Native</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#02569b', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>F</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Flutter</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Database */}
-                    <div className="col-lg-4">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Database</h4>
-                                <div className="row g-3">
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#336791', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>P</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">PostgreSQL</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#00758f', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>M</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">MySQL</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#4db33d', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>M</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">MongoDB</small>
-                                    </div>
-                                    <div className="col-6 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#dc382d', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>R</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Redis</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* DevOps and Cloud */}
-                <div className="row g-4 justify-content-center">
-                    {/* DevOps */}
-                    <div className="col-lg-6">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">DevOps</h4>
-                                <div className="row g-3">
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#68d391', borderRadius: '50%' }}>
-                                                <i className="fab fa-node-js text-white" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Node.JS</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#e0234e', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>N</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Nest.JS</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#68d391', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>E</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Express</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#2496ed', borderRadius: '50%' }}>
-                                                <i className="fab fa-docker text-white" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Docker</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#e6522c', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>P</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Prometheus</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#f46800', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>G</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Grafana</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Cloud Technologies */}
-                    <div className="col-lg-6">
-                        <div
-                            className="card h-100 border border-primary p-4 tech-stack-card"
-                            style={{
-                                backgroundColor: '#3a4a7a',
-                                borderRadius: '15px'
-                            }}
-                        >
-                            <div className="card-body">
-                                <h4 className="text-warning mb-4 text-center">Cloud technologies</h4>
-                                <div className="row g-3">
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#ff9900', borderRadius: '50%' }}>
-                                                <i className="fab fa-aws text-white" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">AWS</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#0078d4', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>A</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Azure</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#ffca28', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-dark" style={{ fontSize: '18px' }}>F</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Firebase</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#4285f4', borderRadius: '50%' }}>
-                                                <i className="fab fa-google text-white" style={{ fontSize: '24px' }}></i>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Google Cloud</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#430098', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-white" style={{ fontSize: '18px' }}>H</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">Heroku</small>
-                                    </div>
-                                    <div className="col-4 text-center">
-                                        <div className="mb-2">
-                                            <div className="tech-icon d-inline-flex align-items-center justify-content-center" style={{ width: '60px', height: '60px', background: '#1bdbdb', borderRadius: '50%' }}>
-                                                <span className="fw-bold text-dark" style={{ fontSize: '18px' }}>G</span>
-                                            </div>
-                                        </div>
-                                        <small className="text-white fw-bold">GoDaddy</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="service-hover-overlay"></div>
                 </div>
             </div>
-        </section>
 
-
-
-
-
-        {/* Services Section */}
-        <section className="py-5">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-3">Our Web3 Services</h2>
-                    <p className="lead" style={{ color: '#cccccc' }}>
-                        Complete blockchain solutions from smart contracts to decentralized applications
+            <div className="col-lg-4 col-md-6">
+                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                    <div className="service-icon-container mb-4">
+                        <div className="service-icon-wrapper">
+                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#gradient2)" opacity="0.2"/>
+                                <rect x="20" y="30" width="60" height="40" rx="5" fill="url(#gradient2)" opacity="0.3"/>
+                                <rect x="25" y="35" width="50" height="30" rx="3" fill="url(#gradient2)"/>
+                                <circle cx="35" cy="45" r="3" fill="white"/>
+                                <circle cx="50" cy="45" r="3" fill="white"/>
+                                <circle cx="65" cy="45" r="3" fill="white"/>
+                                <path d="M30 55h40v3H30v-3z" fill="white"/>
+                                <path d="M30 60h25v3H30v-3z" fill="white"/>
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#f093fb"/>
+                                        <stop offset="100%" stopColor="#f5576c"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 className="service-title text-white mb-3">DApps Development</h4>
+                    <p className="service-description" style={{ color: '#cccccc' }}>
+                        Build decentralized applications that run on blockchain networks, providing users with full control and ownership.
                     </p>
-                </div>
-                <div className="row g-4">
-                    <div className="col-lg-4 col-md-6">
-                        <div
-                            className="card h-100 border-0 p-4"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <div className="card-body">
-                                <div
-                                    className="rounded-3 p-3 d-inline-block mb-3"
-                                    style={{ background: 'linear-gradient(45deg, #667eea, #764ba2)' }}
-                                >
-                                    <i className="fas fa-file-contract text-white fs-3"></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Smart Contracts</h4>
-                                <p className="card-text" style={{ color: '#cccccc' }}>
-                                    Develop secure, audited smart contracts that automate business processes and ensure transparency in transactions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <div
-                            className="card h-100 border-0 p-4"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <div className="card-body">
-                                <div
-                                    className="rounded-3 p-3 d-inline-block mb-3"
-                                    style={{ background: 'linear-gradient(45f, #f093fb, #f5576c)' }}
-                                >
-                                    <i className="fas fa-mobile-alt text-white fs-3"></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">DApps Development</h4>
-                                <p className="card-text" style={{ color: '#cccccc' }}>
-                                    Build decentralized applications that run on blockchain networks, providing users with full control and ownership.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <div
-                            className="card h-100 border-0 p-4"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <div className="card-body">
-                                <div
-                                    className="rounded-3 p-3 d-inline-block mb-3"
-                                    style={{ background: 'linear-gradient(45deg, #4facfe, #00f2fe)' }}
-                                >
-                                    <i className="fas fa-coins text-white fs-3"></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">NFT Solutions</h4>
-                                <p className="card-text" style={{ color: '#cccccc' }}>
-                                    Create and launch NFT marketplaces, collections, and platforms that drive engagement and revenue.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <div
-                            className="card h-100 border-0 p-4"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <div className="card-body">
-                                <div
-                                    className="rounded-3 p-3 d-inline-block mb-3"
-                                    style={{ background: 'linear-gradient(45deg, #fa709a, #fee140)' }}
-                                >
-                                    <i className="fas fa-exchange-alt text-white fs-3"></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">DeFi Platforms</h4>
-                                <p className="card-text" style={{ color: '#cccccc' }}>
-                                    Build decentralized finance applications including DEXs, lending platforms, and yield farming solutions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <div
-                            className="card h-100 border-0 p-4"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <div className="card-body">
-                                <div
-                                    className="rounded-3 p-3 d-inline-block mb-3"
-                                    style={{ background: 'linear-gradient(45deg, #a8edea, #fed6e3)' }}
-                                >
-                                    <i className="fas fa-link text-white fs-3"></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Blockchain Integration</h4>
-                                <p className="card-text" style={{ color: '#cccccc' }}>
-                                    Integrate blockchain technology into existing systems and workflows for enhanced security and transparency.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                        <div
-                            className="card h-100 border-0 p-4"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <div className="card-body">
-                                <div
-                                    className="rounded-3 p-3 d-inline-block mb-3"
-                                    style={{ background: 'linear-gradient(45deg, #ffecd2, #fcb69f)' }}
-                                >
-                                    <i className="fas fa-shield-alt text-white fs-3"></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Security Audits</h4>
-                                <p className="card-text" style={{ color: '#cccccc' }}>
-                                    Comprehensive security audits and testing to ensure your blockchain applications are secure and reliable.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="service-hover-overlay"></div>
                 </div>
             </div>
-        </section>
+
+            <div className="col-lg-4 col-md-6">
+                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                    <div className="service-icon-container mb-4">
+                        <div className="service-icon-wrapper">
+                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#gradient3)" opacity="0.2"/>
+                                <rect x="25" y="25" width="50" height="35" rx="5" fill="url(#gradient3)" opacity="0.3"/>
+                                <rect x="30" y="30" width="40" height="25" rx="3" fill="url(#gradient3)"/>
+                                <path d="M35 70l5-5 5 5 5-5 5 5 5-5 5 5" stroke="url(#gradient3)" strokeWidth="2" fill="none"/>
+                                <circle cx="40" cy="40" r="3" fill="white"/>
+                                <circle cx="50" cy="40" r="3" fill="white"/>
+                                <circle cx="60" cy="40" r="3" fill="white"/>
+                                <path d="M35 48h30v2H35v-2z" fill="white"/>
+                                <defs>
+                                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#4facfe"/>
+                                        <stop offset="100%" stopColor="#00f2fe"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 className="service-title text-white mb-3">NFT Solutions</h4>
+                    <p className="service-description" style={{ color: '#cccccc' }}>
+                        Create and launch NFT marketplaces, collections, and platforms that drive engagement and revenue.
+                    </p>
+                    <div className="service-hover-overlay"></div>
+                </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                    <div className="service-icon-container mb-4">
+                        <div className="service-icon-wrapper">
+                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#gradient4)" opacity="0.2"/>
+                                <circle cx="30" cy="40" r="12" fill="url(#gradient4)" opacity="0.3"/>
+                                <circle cx="70" cy="40" r="12" fill="url(#gradient4)" opacity="0.3"/>
+                                <circle cx="50" cy="65" r="12" fill="url(#gradient4)" opacity="0.3"/>
+                                <path d="M38 48l12 8M62 48l-12 8M42 57l8-8M58 57l-8-8" stroke="url(#gradient4)" strokeWidth="3"/>
+                                <circle cx="30" cy="40" r="6" fill="url(#gradient4)"/>
+                                <circle cx="70" cy="40" r="6" fill="url(#gradient4)"/>
+                                <circle cx="50" cy="65" r="6" fill="url(#gradient4)"/>
+                                <defs>
+                                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#fa709a"/>
+                                        <stop offset="100%" stopColor="#fee140"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 className="service-title text-white mb-3">DeFi Platforms</h4>
+                    <p className="service-description" style={{ color: '#cccccc' }}>
+                        Build decentralized finance applications including DEXs, lending platforms, and yield farming solutions.
+                    </p>
+                    <div className="service-hover-overlay"></div>
+                </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                    <div className="service-icon-container mb-4">
+                        <div className="service-icon-wrapper">
+                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#gradient5)" opacity="0.2"/>
+                                <rect x="20" y="35" width="60" height="30" rx="5" fill="url(#gradient5)" opacity="0.3"/>
+                                <circle cx="35" cy="50" r="8" fill="url(#gradient5)"/>
+                                <circle cx="65" cy="50" r="8" fill="url(#gradient5)"/>
+                                <path d="M43 50h14" stroke="url(#gradient5)" strokeWidth="4"/>
+                                <path d="M25 25h50v5H25v-5z" fill="url(#gradient5)"/>
+                                <path d="M25 70h50v5H25v-5z" fill="url(#gradient5)"/>
+                                <circle cx="50" cy="27" r="2" fill="white"/>
+                                <circle cx="50" cy="73" r="2" fill="white"/>
+                                <defs>
+                                    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#a8edea"/>
+                                        <stop offset="100%" stopColor="#fed6e3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 className="service-title text-white mb-3">Blockchain Integration</h4>
+                    <p className="service-description" style={{ color: '#cccccc' }}>
+                        Integrate blockchain technology into existing systems and workflows for enhanced security and transparency.
+                    </p>
+                    <div className="service-hover-overlay"></div>
+                </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                    <div className="service-icon-container mb-4">
+                        <div className="service-icon-wrapper">
+                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="50" r="45" fill="url(#gradient6)" opacity="0.2"/>
+                                <circle cx="50" cy="50" r="25" fill="url(#gradient6)" opacity="0.3"/>
+                                <circle cx="50" cy="50" r="15" fill="url(#gradient6)"/>
+                                <path d="M35 35l30 30M65 35l-30 30" stroke="white" strokeWidth="3"/>
+                                <circle cx="50" cy="25" r="4" fill="url(#gradient6)"/>
+                                <circle cx="75" cy="50" r="4" fill="url(#gradient6)"/>
+                                <circle cx="50" cy="75" r="4" fill="url(#gradient6)"/>
+                                <circle cx="25" cy="50" r="4" fill="url(#gradient6)"/>
+                                <defs>
+                                    <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#ffecd2"/>
+                                        <stop offset="100%" stopColor="#fcb69f"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 className="service-title text-white mb-3">Security Audits</h4>
+                    <p className="service-description" style={{ color: '#cccccc' }}>
+                        Comprehensive security audits and testing to ensure your blockchain applications are secure and reliable.
+                    </p>
+                    <div className="service-hover-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         {/* Features Section */}
         <section className="py-5" style={{ backgroundColor: '#1a1a3a' }}>
