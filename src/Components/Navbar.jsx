@@ -4,7 +4,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#060615' }}>
       <div className="container">
         <a className="navbar-brand fw-bold" href="#" style={{ fontSize: '1.5rem', color: '#ffffff' }}>
-          ALTIORA INFOTECH BY KABIR
+          ALTIORA INFOTECH
         </a>
         <button 
           className="navbar-toggler" 

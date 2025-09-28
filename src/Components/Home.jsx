@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HomePage = () => (
-    <div style={{ backgroundColor: '#060620', minHeight: '100vh', color: '#ffffff' }}>
+    <div style={{ backgroundColor: '# git push --set-upstream origin main', minHeight: '100vh', color: '#ffffff' }}>
       {/* Hero Section */}
       <section className="py-5" style={{ background: 'linear-gradient(135deg, #060620 0%, #1a1a3a 100%)' }}>
         <div className="container">

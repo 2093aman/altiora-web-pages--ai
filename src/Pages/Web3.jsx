@@ -6,29 +6,51 @@ const Web3Page = () => (
       <section className="py-5" style={{ background: 'linear-gradient(135deg, #060620 0%, #1a1a3a 100%)' }}>
         <div className="container">
           <div className="row align-items-center">
+            {/* Image Section - First Column */}
             <div className="col-lg-6">
-              <h1 className="display-4 fw-bold mb-4">
-                Web3 Solutions
-                <span className="text-primary"> for the Decentralized Future</span>
-              </h1>
-              <p className="lead mb-4" style={{ color: '#cccccc' }}>
-                Web3 is changing the trend towards openness which is user-owned rather than centralized online economy. Our blockchain-based solutions bring transparency, trust, and innovation to your business.
-              </p>
-              <div className="d-flex gap-3">
-                <button className="btn btn-primary btn-lg px-4">Start Your Web3 Journey</button>
-                <button className="btn btn-outline-light btn-lg px-4">View Portfolio</button>
+              <div className="text-center mb-5">
+                <img 
+                  src="/web3.jpg" 
+                  alt="Blockchain Innovation" 
+                  className="img-fluid rounded-3"
+                  style={{ 
+                    maxWidth: '100%', 
+                    height: 'auto',
+                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
+                  }}
+                  onError={(e) => {
+                    // Fallback if image doesn't load
+                    e.target.style.display = 'none';
+                    e.target.nextElementSibling.style.display = 'block';
+                  }}
+                />
+                {/* Fallback content if image fails to load */}
+                <div 
+                  className="rounded-3 p-5 text-center"
+                  style={{ 
+                    background: 'linear-gradient(45deg, #667eea 0%, #764ba2 100%)',
+                    height: '400px',
+                    display: 'none'
+                  }}
+                >
+                  <i className="fas fa-cubes text-white display-1 mb-3"></i>
+                  <h3 className="text-white">Blockchain Innovation</h3>
+                </div>
               </div>
             </div>
+            {/* Text Section - Second Column */}
             <div className="col-lg-6">
-              <div 
-                className="rounded-3 p-5 text-center"
-                style={{ 
-                  background: 'linear-gradient(45deg, #667eea 0%, #764ba2 100%)',
-                  height: '400px'
-                }}
-              >
-                <i className="fas fa-cubes text-white display-1 mb-3"></i>
-                <h3 className="text-white">Blockchain Innovation</h3>
+              <h1 className="display-3 fw-bold mb-4">
+                We launch blockchain products that make money
+                <br />
+                <span className="text-primary display-6"> From token to CEX — in 6–12 weeks with support at every stage</span>
+              </h1>
+              <p className="lead mb-4" style={{ color: '#cccccc' }}>
+                  Whether you’re launching a token, developing smart contracts, or deploying a CEX — we turn your vision into revenue-driving blockchain solutions with clarity, control, and trust.
+              </p>  
+              <div className="d-flex gap-3">
+                <button className="btn btn-warning btn-lg px-4">Start Your Web3 Journey</button>
+                <button className="btn btn-outline-light btn-lg px-4">View Portfolio</button>
               </div>
             </div>
           </div>
