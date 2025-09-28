@@ -264,3 +264,774 @@
 .service-card:nth-child(4) { animation-delay: 0.4s; }
 .service-card:nth-child(5) { animation-delay: 0.5s; }
 .service-card:nth-child(6) { animation-delay: 0.6s; }
+
+
+
+/* Add this to your Web3.css file for the How We Do It section */
+
+/* How We Do It Container */
+.how-we-do-it-container {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.how-we-image {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 3px solid transparent;
+  background: linear-gradient(#060615, #060615) padding-box,
+              linear-gradient(45deg, transparent, transparent) border-box;
+}
+
+.how-we-image:hover {
+  transform: scale(1.02);
+  border-color: rgba(255, 193, 7, 0.5);
+  filter: 
+    drop-shadow(0 25px 50px rgba(0,0,0,0.6))
+    drop-shadow(0 0 30px rgba(255, 193, 7, 0.2)) !important;
+  background: linear-gradient(#060615, #060615) padding-box,
+              linear-gradient(45deg, #ffc107, #ff8f00, #ffc107) border-box;
+}
+
+/* Fallback Styling */
+.how-we-fallback {
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.how-we-fallback::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.1), transparent);
+  transition: left 0.8s ease;
+  z-index: 1;
+}
+
+.how-we-fallback:hover::before {
+  left: 100%;
+}
+
+/* Process Steps Styling */
+.process-item {
+  transition: all 0.3s ease;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.process-item:hover {
+  background: rgba(255, 193, 7, 0.05);
+  transform: translateX(10px);
+}
+
+.process-number {
+  transition: all 0.3s ease;
+}
+
+.process-item:hover .process-number .badge {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+.process-item h5 {
+  transition: all 0.3s ease;
+}
+
+.process-item:hover h5 {
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
+  transform: scale(1.05);
+}
+
+.process-item p {
+  transition: all 0.3s ease;
+}
+
+.process-item:hover p {
+  color: #f0f0f0 !important;
+  transform: translateY(-2px);
+}
+
+/* Blockchain Visual Effects */
+.blockchain-visual {
+  position: relative;
+}
+
+.bitcoin-icon {
+  transition: all 0.5s ease;
+}
+
+.blockchain-visual:hover .bitcoin-icon i {
+  transform: rotate(360deg) scale(1.1);
+  text-shadow: 
+    0 0 30px rgba(255, 193, 7, 0.8),
+    0 0 60px rgba(255, 193, 7, 0.4);
+}
+
+/* Tech Particles Animation */
+.tech-particles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #ffc107;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.particle-1 {
+  top: 20%;
+  left: 20%;
+  animation: float-particle 4s ease-in-out infinite;
+}
+
+.particle-2 {
+  top: 20%;
+  right: 20%;
+  animation: float-particle 4s ease-in-out infinite 1s;
+}
+
+.particle-3 {
+  bottom: 20%;
+  left: 20%;
+  animation: float-particle 4s ease-in-out infinite 2s;
+}
+
+.particle-4 {
+  bottom: 20%;
+  right: 20%;
+  animation: float-particle 4s ease-in-out infinite 3s;
+}
+
+@keyframes float-particle {
+  0%, 100% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+  }
+}
+
+/* Glowing Effect on Hover */
+.how-we-do-it-container:hover .particle {
+  animation-duration: 2s;
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+}
+
+/* Section Entrance Animation */
+@keyframes section-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.how-we-do-it-container {
+  animation: section-fade-in 1s ease-out;
+}
+
+/* Image Loading Animation */
+@keyframes image-load {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.how-we-image {
+  animation: image-load 1.2s ease-out;
+}
+
+/* Process Items Staggered Animation */
+.process-item:nth-child(1) { animation: section-fade-in 0.8s ease-out 0.2s both; }
+.process-item:nth-child(2) { animation: section-fade-in 0.8s ease-out 0.4s both; }
+.process-item:nth-child(3) { animation: section-fade-in 0.8s ease-out 0.6s both; }
+.process-item:nth-child(4) { animation: section-fade-in 0.8s ease-out 0.8s both; }
+.process-item:nth-child(5) { animation: section-fade-in 0.8s ease-out 1.0s both; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .how-we-image {
+    border-radius: 15px !important;
+  }
+  
+  .how-we-fallback {
+    padding: 2rem !important;
+  }
+  
+  .process-item {
+    padding: 0.75rem;
+  }
+  
+  .process-item:hover {
+    transform: translateX(5px);
+  }
+  
+  .bitcoin-icon i {
+    font-size: 80px !important;
+  }
+  
+  .tech-particles {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .how-we-image {
+    border-radius: 10px !important;
+  }
+  
+  .how-we-fallback {
+    padding: 1.5rem !important;
+  }
+  
+  .process-number .badge {
+    font-size: 1rem !important;
+  }
+  
+  .bitcoin-icon i {
+    font-size: 60px !important;
+  }
+  
+  .particle {
+    width: 4px !important;
+    height: 4px !important;
+  }
+}
+
+/* Loading State */
+.how-we-image {
+  background: linear-gradient(90deg, #1a1a3a 25%, #2a2a4a 50%, #1a1a3a 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 2s infinite linear;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.how-we-image[src] {
+  background: none;
+  animation: image-load 1.2s ease-out;
+}
+
+/* Complete How We Do It Section CSS */
+/* Add this to your Web3.css file */
+
+/* Main Container with Border Highlights */
+.how-we-main-container {
+  transition: all 0.5s ease;
+  position: relative;
+  min-height: 600px;
+  border: 2px solid transparent;
+  background: 
+    linear-gradient(135deg, #1a1a3a 0%, #2a2a4a 100%) padding-box,
+    linear-gradient(45deg, #ffc107, #ff8f00, #ffc107, #667eea, #764ba2) border-box;
+  box-shadow: 
+    0 0 20px rgba(255, 193, 7, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.how-we-main-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.1), transparent);
+  transition: left 1s ease;
+  z-index: 1;
+}
+
+.how-we-main-container:hover::before {
+  left: 100%;
+}
+
+.how-we-main-container:hover {
+  border-color: rgba(255, 193, 7, 0.8);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(255, 193, 7, 0.4),
+    0 0 60px rgba(255, 193, 7, 0.2),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1);
+  background: 
+    linear-gradient(135deg, #2a2a4a 0%, #3a3a5a 100%) padding-box,
+    linear-gradient(45deg, #ffc107, #ff8f00, #ffc107, #667eea, #764ba2) border-box;
+}
+
+/* Process Steps Container */
+.process-steps-container {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+}
+
+/* Individual Process Items with Border Highlights */
+.process-item {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  background: 
+    rgba(255, 255, 255, 0.02) padding-box,
+    linear-gradient(45deg, transparent, rgba(255, 193, 7, 0.3), transparent) border-box;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.process-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(45deg, #ffc107, #ff8f00);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.process-item:hover {
+  background: 
+    rgba(255, 193, 7, 0.08) padding-box,
+    linear-gradient(45deg, #ffc107, #ff8f00, #ffc107) border-box;
+  transform: translateX(15px);
+  border-color: #ffc107;
+  box-shadow: 
+    0 8px 25px rgba(255, 193, 7, 0.3),
+    0 0 20px rgba(255, 193, 7, 0.2),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.process-item:hover::before {
+  transform: scaleY(1);
+}
+
+/* Process Number Badge */
+.process-number {
+  position: relative;
+  z-index: 3;
+}
+
+.process-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.process-item:hover .process-badge {
+  transform: scale(1.15) rotateY(360deg);
+  box-shadow: 
+    0 8px 25px rgba(255, 193, 7, 0.5),
+    0 0 20px rgba(255, 193, 7, 0.4),
+    0 0 0 5px rgba(255, 193, 7, 0.2),
+    inset 0 3px 0 rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 193, 7, 0.8);
+}
+
+/* Process Content */
+.process-content {
+  position: relative;
+  z-index: 2;
+}
+
+.process-title {
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.process-item:hover .process-title {
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255, 193, 7, 0.6);
+  transform: scale(1.05);
+}
+
+.process-description {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.process-item:hover .process-description {
+  color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+
+.how-we-main-image {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(#060615, #060615) padding-box,
+    linear-gradient(45deg, #ffc107, #667eea, #764ba2, #ffc107) border-box;
+  box-shadow: 
+    0 15px 30px rgba(0,0,0,0.4),
+    0 0 20px rgba(255, 193, 7, 0.2);
+}
+
+.how-we-main-image:hover {
+  transform: scale(1.05) rotateY(5deg);
+  filter: 
+    drop-shadow(0 20px 40px rgba(0,0,0,0.5))
+    drop-shadow(0 0 30px rgba(255, 193, 7, 0.4)) !important;
+  background: 
+    linear-gradient(#060615, #060615) padding-box,
+    linear-gradient(45deg, #ffc107, #ff8f00, #667eea, #764ba2, #ffc107) border-box;
+  box-shadow: 
+    0 25px 50px rgba(0,0,0,0.6),
+    0 0 40px rgba(255, 193, 7, 0.4),
+    0 0 80px rgba(255, 193, 7, 0.2);
+}
+
+/* Image Fallback with Border Highlights */
+.image-fallback {
+  transition: all 0.5s ease;
+  position: relative;
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%) padding-box,
+    linear-gradient(45deg, #ffc107, #ff8f00, #ffc107) border-box;
+  box-shadow: 
+    0 15px 30px rgba(0,0,0,0.4),
+    0 0 20px rgba(255, 193, 7, 0.2);
+}
+
+.image-fallback:hover {
+  background: 
+    linear-gradient(135deg, #764ba2 0%, #667eea 100%) padding-box,
+    linear-gradient(45deg, #ffc107, #ff8f00, #667eea, #764ba2, #ffc107) border-box;
+  box-shadow: 
+    0 25px 50px rgba(0,0,0,0.6),
+    0 0 40px rgba(255, 193, 7, 0.4),
+    0 0 80px rgba(255, 193, 7, 0.2);
+  transform: scale(1.02);
+}
+
+.fallback-bitcoin i {
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.image-fallback:hover .fallback-bitcoin i {
+  transform: rotate(360deg) scale(1.2);
+  text-shadow: 
+    0 0 30px rgba(255, 193, 7, 0.8),
+    0 0 60px rgba(255, 193, 7, 0.4);
+}
+
+/* Fallback Particles */
+.fallback-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fallback-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(45deg, #ffc107, #ff8f00);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.fallback-particle-1 {
+  top: 15%;
+  left: 15%;
+  animation: float-particle-1 3s ease-in-out infinite;
+}
+
+.fallback-particle-2 {
+  top: 20%;
+  right: 20%;
+  animation: float-particle-2 3s ease-in-out infinite 0.5s;
+}
+
+.fallback-particle-3 {
+  top: 50%;
+  left: 10%;
+  animation: float-particle-3 3s ease-in-out infinite 1s;
+}
+
+.fallback-particle-4 {
+  bottom: 30%;
+  left: 25%;
+  animation: float-particle-4 3s ease-in-out infinite 1.5s;
+}
+
+.fallback-particle-5 {
+  bottom: 20%;
+  right: 15%;
+  animation: float-particle-5 3s ease-in-out infinite 2s;
+}
+
+.fallback-particle-6 {
+  top: 70%;
+  right: 30%;
+  animation: float-particle-6 3s ease-in-out infinite 2.5s;
+}
+
+@keyframes float-particle-1 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(20px, -30px) scale(1.2); }
+}
+
+@keyframes float-particle-2 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(-15px, 25px) scale(1.2); }
+}
+
+@keyframes float-particle-3 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(25px, -20px) scale(1.2); }
+}
+
+@keyframes float-particle-4 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(-20px, -25px) scale(1.2); }
+}
+
+@keyframes float-particle-5 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(15px, 20px) scale(1.2); }
+}
+
+@keyframes float-particle-6 {
+  0%, 100% { transform: translate(0, 0) scale(0.8); }
+  50% { transform: translate(-25px, 15px) scale(1.2); }
+}
+
+/* Add Border Pulse Animation */
+@keyframes border-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(255, 193, 7, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(255, 193, 7, 0.4),
+      0 0 60px rgba(255, 193, 7, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+.how-we-main-container {
+  animation: border-pulse 4s ease-in-out infinite;
+}
+
+/* Animated Border for Process Items */
+@keyframes process-border-glow {
+  0%, 100% {
+    background: 
+      rgba(255, 255, 255, 0.02) padding-box,
+      linear-gradient(45deg, transparent, rgba(255, 193, 7, 0.3), transparent) border-box;
+  }
+  50% {
+    background: 
+      rgba(255, 255, 255, 0.02) padding-box,
+      linear-gradient(45deg, rgba(255, 193, 7, 0.2), rgba(255, 193, 7, 0.5), rgba(255, 193, 7, 0.2)) border-box;
+  }
+}
+
+.process-item {
+  animation: process-border-glow 3s ease-in-out infinite;
+  animation-delay: calc(var(--index) * 0.5s);
+}
+
+.process-item:nth-child(1) { --index: 1; }
+.process-item:nth-child(2) { --index: 2; }
+.process-item:nth-child(3) { --index: 3; }
+.process-item:nth-child(4) { --index: 4; }
+.process-item:nth-child(5) { --index: 5; }
+.how-we-background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 193, 7, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(102, 126, 234, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Entrance Animations */
+@keyframes section-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.how-we-main-container {
+  animation: section-slide-in 1s ease-out;
+}
+
+.process-item:nth-child(1) { animation: section-slide-in 0.6s ease-out 0.2s both; }
+.process-item:nth-child(2) { animation: section-slide-in 0.6s ease-out 0.4s both; }
+.process-item:nth-child(3) { animation: section-slide-in 0.6s ease-out 0.6s both; }
+.process-item:nth-child(4) { animation: section-slide-in 0.6s ease-out 0.8s both; }
+.process-item:nth-child(5) { animation: section-slide-in 0.6s ease-out 1.0s both; }
+
+.how-we-main-image {
+  animation: section-slide-in 1.2s ease-out 0.5s both;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .how-we-main-container {
+    min-height: auto;
+  }
+  
+  .process-steps-container {
+    margin-bottom: 2rem;
+  }
+  
+  .process-item {
+    padding: 1rem;
+  }
+  
+  .process-badge {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+  
+  .process-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-we-main-container {
+    padding: 2rem !important;
+  }
+  
+  .process-item {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .process-item:hover {
+    transform: translateX(8px);
+  }
+  
+  .process-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .process-title {
+    font-size: 1.1rem;
+  }
+  
+  .process-description {
+    font-size: 0.9rem;
+  }
+  
+  .image-container {
+    padding: 1rem;
+  }
+  
+  .how-we-main-image {
+    max-width: 100% !important;
+  }
+  
+  .fallback-bitcoin i {
+    font-size: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .how-we-main-container {
+    padding: 1.5rem !important;
+    border-radius: 15px !important;
+  }
+  
+  .process-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .process-number {
+    margin-bottom: 1rem;
+    margin-right: 0 !important;
+  }
+  
+  .process-badge {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+  
+  .image-fallback {
+    height: 300px !important;
+  }
+}
+

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HomePage from './Components/Home.jsx';
+import HomePage from './Pages/Home.jsx';
 import Web3Page from './Pages/Web3.jsx';
 import Navbar from './Components/Navbar.jsx';
 

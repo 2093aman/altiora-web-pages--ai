@@ -1,5 +1,7 @@
 import React from 'react'
 import './Web3.css';
+import bitcoin from '../assets/bitcoin.jpg';
+import web3 from  '../assets/web3.jpg';
 
 const Web3Page = () => (
     <div style={{ backgroundColor: '#060615', minHeight: '100vh', color: '#ffffff' }}>
@@ -11,7 +13,7 @@ const Web3Page = () => (
                     <div className="col-lg-6">
                         <div className="text-center mb-5">
                             <img
-                                src="/web3.jpg"
+                                src={web3}
                                 alt="Blockchain Innovation"
                                 className="img-fluid rounded-3"
                                 style={{
@@ -545,168 +547,169 @@ const Web3Page = () => (
     </div>
 </section>
 
-        {/* Features Section */}
-        <section className="py-5" style={{ backgroundColor: '#1a1a3a' }}>
-            <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-lg-6">
-                        <h2 className="display-6 fw-bold mb-4">Why Choose Our Web3 Solutions?</h2>
-                        <p className="mb-4" style={{ color: '#cccccc' }}>
-                            Web3 is not merely a technology stack, it is a system of ownership and inclusion and freedom. We assist you in achieving alignment of governance, security, and usability for long-term success.
-                        </p>
-                        <div className="row g-3">
-                            <div className="col-md-6">
-                                <div className="d-flex align-items-start">
-                                    <i className="fas fa-rocket text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5 className="text-white mb-2">Production Ready</h5>
-                                        <p className="mb-0" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                            Deploy-ready solutions tested for security and performance
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="d-flex align-items-start">
-                                    <i className="fas fa-users text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5 className="text-white mb-2">Community Focus</h5>
-                                        <p className="mb-0" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                            Building for user ownership and community governance
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="d-flex align-items-start">
-                                    <i className="fas fa-code text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5 className="text-white mb-2">Expert Development</h5>
-                                        <p className="mb-0" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                            Experienced team with deep blockchain knowledge
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="d-flex align-items-start">
-                                    <i className="fas fa-chart-line text-primary me-3 mt-1"></i>
-                                    <div>
-                                        <h5 className="text-white mb-2">Scalable Solutions</h5>
-                                        <p className="mb-0" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                            Built to scale with your growing user base
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div
-                            className="rounded-3 p-5 text-center"
-                            style={{
-                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                height: '400px'
-                            }}
-                        >
-                            <div className="d-flex flex-column justify-content-center h-100">
-                                <i className="fas fa-globe-americas text-white display-1 mb-3"></i>
-                                <h3 className="text-white mb-3">Decentralized Future</h3>
-                                <p className="text-white opacity-75">
-                                    Building the infrastructure for tomorrow's internet
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        {/* Technology Stack */}
-        <section className="py-5">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-3">Our Technology Stack</h2>
-                    <p className="lead" style={{ color: '#cccccc' }}>
-                        We work with cutting-edge blockchain technologies and frameworks
-                    </p>
-                </div>
-                <div className="row g-4">
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">Ethereum</h5>
-                            <p className="text-muted mb-0">Smart Contracts & DApps</p>
+{/* How We Do It Section */}
+<section className="py-5" style={{ backgroundColor: '#060615' }}>
+    <div className="container">
+        <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-4" style={{ color: '#ffffff' }}>How We Do It</h2>
+            <p className="lead" style={{ color: '#cccccc' }}>
+                Our proven methodology ensures successful blockchain project delivery
+            </p>
+        </div>
+        
+        <div className="row justify-content-center">
+            <div className="col-lg-12">
+                <div 
+                    className="how-we-main-container p-4"
+                    style={{
+                        background: 'linear-gradient(135deg, #1a1a3a 0%, #2a2a4a 100%)',
+                        borderRadius: '20px',
+                        border: '2px solid rgba(255, 193, 7, 0.3)',
+                        position: 'relative',
+                        overflow: 'hidden'
+                    }}
+                >
+                    <div className="row g-4 align-items-center">
+                        {/* Left Side - Process Steps */}
+                        <div className="col-lg-6">
+                            <div className="process-steps-container">
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-4">
+                                        <span className="process-badge">01</span>
+                                    </div>
+                                    <div className="process-content">
+                                        <h4 className="process-title mb-2">Audit Ready</h4>
+                                        <p className="process-description mb-0">
+                                            Contracts ship with tests, invariants, fuzzing, coverage reports, and auditor grade docs
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-4">
+                                        <span className="process-badge">02</span>
+                                    </div>
+                                    <div className="process-content">
+                                        <h4 className="process-title mb-2">Built In Weeks</h4>
+                                        <p className="process-description mb-0">
+                                            Productised sprints for wallets, DEX, payments, DePIN & AA so you ship fast and de-risk early
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-4">
+                                        <span className="process-badge">03</span>
+                                    </div>
+                                    <div className="process-content">
+                                        <h4 className="process-title mb-2">Tokenomics That Sustain</h4>
+                                        <p className="process-description mb-0">
+                                            Emissions curves, sinks, fee capture, and dashboards so tokens drive utility—not just speculation
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-4">
+                                        <span className="process-badge">04</span>
+                                    </div>
+                                    <div className="process-content">
+                                        <h4 className="process-title mb-2">On-Chain Payments & Treasury Ops</h4>
+                                        <p className="process-description mb-0">
+                                            Stablecoin rails, invoicing, reconciliation, and policy-driven payouts that finance teams trust
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div className="process-item d-flex align-items-start">
+                                    <div className="process-number me-4">
+                                        <span className="process-badge">05</span>
+                                    </div>
+                                    <div className="process-content">
+                                        <h4 className="process-title mb-2">Fixed Scope, Fixed Price, Warranty</h4>
+                                        <p className="process-description mb-0">
+                                            Clear inclusions/exclusions milestones billing, and a post-launch stabilisation window (We deliver Bug Bounties as and when required)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {/* Right Side - Image */}
+                        <div className="col-lg-6">
+                            <div className="image-container text-center">
+                                <img
+                                    src={bitcoin}
+                                    alt="How We Do It - Blockchain Development Process"
+                                    className="img-fluid how-we-main-image"
+                                    style={{
+                                        width: '100%',
+                                        maxWidth: '500px',
+                                        height: 'auto',
+                                        borderRadius: '15px',
+                                        filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.4))',
+                                        border: '2px solid rgba(255, 193, 7, 0.2)'
+                                    }}
+                                    onError={(e) => {
+                                        // Fallback if image doesn't load
+                                        e.target.style.display = 'none';
+                                        e.target.nextElementSibling.style.display = 'block';
+                                    }}
+                                />
+                                
+                                {/* Fallback if image doesn't load */}
+                                <div
+                                    className="image-fallback d-none"
+                                    style={{
+                                        width: '100%',
+                                        maxWidth: '500px',
+                                        height: '400px',
+                                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                        borderRadius: '15px',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        margin: '0 auto',
+                                        border: '2px solid rgba(255, 193, 7, 0.2)',
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                >
+                                    {/* Bitcoin Icon */}
+                                    <div className="fallback-bitcoin mb-3" style={{ position: 'relative', zIndex: '2' }}>
+                                        <i className="fab fa-bitcoin text-warning" style={{ fontSize: '80px' }}></i>
+                                    </div>
+                                    
+                                    {/* Blockchain Text */}
+                                    <h4 className="text-white mb-2" style={{ position: 'relative', zIndex: '2' }}>Blockchain Innovation</h4>
+                                    <p className="text-white opacity-75" style={{ position: 'relative', zIndex: '2' }}>
+                                        Building the future of Web3
+                                    </p>
+                                    
+                                    {/* Animated Particles */}
+                                    <div className="fallback-particles">
+                                        <div className="fallback-particle fallback-particle-1"></div>
+                                        <div className="fallback-particle fallback-particle-2"></div>
+                                        <div className="fallback-particle fallback-particle-3"></div>
+                                        <div className="fallback-particle fallback-particle-4"></div>
+                                        <div className="fallback-particle fallback-particle-5"></div>
+                                        <div className="fallback-particle fallback-particle-6"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">Solidity</h5>
-                            <p className="text-muted mb-0">Smart Contract Development</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">Web3.js</h5>
-                            <p className="text-muted mb-0">Blockchain Integration</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">IPFS</h5>
-                            <p className="text-muted mb-0">Decentralized Storage</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">Polygon</h5>
-                            <p className="text-muted mb-0">Layer 2 Solutions</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">Hardhat</h5>
-                            <p className="text-muted mb-0">Development Framework</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">MetaMask</h5>
-                            <p className="text-muted mb-0">Wallet Integration</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-4 col-sm-6">
-                        <div
-                            className="card border-0 p-3 text-center h-100"
-                            style={{ backgroundColor: '#1a1a3a' }}
-                        >
-                            <h5 className="text-white mb-3">OpenZeppelin</h5>
-                            <p className="text-muted mb-0">Security Standards</p>
-                        </div>
-                    </div>
+                    
+                    {/* Background Animation */}
+                    <div className="how-we-background-animation"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
 
         {/* CTA Section */}
         <section className="py-5" style={{ backgroundColor: '#1a1a3a' }}>
