@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import HomePage from './Pages/Home.jsx';
 import Web3Page from './Pages/Web3/Web3.jsx';
 import Web2Page from './Pages/Web2/Web2.jsx';
@@ -9,7 +9,25 @@ import Footer from './Components/Footer.jsx';
 import Chatbot from './Components/Chatbot.jsx';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('web3'); // start on Web3
+  const [currentPage, setCurrentPage] = useState('web3'); // default
+
+  // set from URL hash on first load
+  useEffect(() => {
+    const initial = (window.location.hash || '').replace('#','');
+    if (['web3','web2','ai','home'].includes(initial)) {
+      setCurrentPage(initial);
+    }
+  }, []);
+
+  // listen for manual hash changes (back/forward)
+  useEffect(() => {
+    const onHashChange = () => {
+      const page = (window.location.hash || '').replace('#','');
+      if (['web3','web2','ai','home'].includes(page)) setCurrentPage(page);
+    };
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
 
   const renderPage = () => {
     switch (currentPage) {
@@ -17,7 +35,7 @@ export default function App() {
       case 'web2': return <Web2Page />;
       case 'ai':   return <AIPage />;
       case 'home': return <HomePage />;
-      default:     return <Web3Page />; // default to Web3
+      default:     return <Web3Page />;
     }
   };
 

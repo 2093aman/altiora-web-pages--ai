@@ -113,7 +113,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               aria-label={open ? 'Close menu' : 'Open menu'}
               className="d-inline-flex d-md-none align-items-center justify-content-center rounded p-2"
               onClick={() => setOpen((v) => !v)}
-              style={{ color: '#e5e7eb' }} // gray-200
+              style={{ color: '#000' }} // gray-200
             >
               {open ? (
                 // X icon

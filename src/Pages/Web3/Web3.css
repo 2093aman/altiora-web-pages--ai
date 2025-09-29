@@ -1035,3 +1035,186 @@
   }
 }
 
+/* ============================
+   GLOBAL RESPONSIVE TWEAKS
+   ============================ */
+
+/* Fluid type for hero & section titles */
+h1.display-3 { font-size: clamp(2rem, 4vw + 1rem, 3.5rem); }
+h2.display-5 { font-size: clamp(1.5rem, 2.5vw + 1rem, 2.5rem); }
+h2.display-6 { font-size: clamp(1.25rem, 2vw + 0.9rem, 2rem); }
+.lead        { font-size: clamp(1rem, 1vw + 0.8rem, 1.25rem); }
+
+/* Images always shrink properly */
+img, .img-fluid { max-width: 100%; height: auto; }
+
+/* Make long card titles wrap gracefully */
+.card-title { word-break: break-word; }
+
+/* Reduce horizontal overflow on tiny screens */
+.container { padding-left: 16px; padding-right: 16px; }
+
+/* ============================
+   CARDS & SERVICES
+   ============================ */
+
+/* Slightly softer hover on small screens to avoid jank */
+@media (max-width: 576px) {
+  .delivery-card,
+  .service-card {
+    transform: none !important;
+    will-change: auto;
+  }
+  .delivery-card:hover,
+  .service-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 10px 24px rgba(255, 193, 7, 0.25);
+  }
+  /* add bottom spacing between stacked cards */
+  .delivery-card, .service-card { margin-bottom: 1rem; }
+}
+
+/* No hover effects on touch devices (prevents sticky states) */
+@media (hover: none) {
+  .delivery-card:hover,
+  .service-card:hover,
+  .process-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background: inherit !important;
+  }
+  .service-icon,
+  .service-card:hover .service-icon {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Keep equal heights but allow internal content to breathe */
+.card.h-100 .card-body {
+  display: flex; flex-direction: column;
+}
+.card.h-100 .btn { margin-top: auto; }
+
+/* Tighten gutters on tablets */
+@media (max-width: 992px) {
+  .row.g-4 { --bs-gutter-x: 1rem; --bs-gutter-y: 1rem; }
+}
+
+/* ============================
+   HERO & SECTION SPACING
+   ============================ */
+.hero-web3 { padding-top: clamp(2rem, 6vw, 4rem); padding-bottom: clamp(2rem, 6vw, 4rem); }
+
+section.py-5 { padding-top: clamp(2rem, 5vw, 3rem) !important; padding-bottom: clamp(2rem, 5vw, 3rem) !important; }
+
+/* Reduce glow backgrounds on very small screens for performance */
+@media (max-width: 576px) {
+  .hero-web3 { background: linear-gradient(135deg, #0b0d2a 0%, #0b0d2a 100%) !important; }
+}
+
+/* ============================
+   HOW WE DO IT
+   ============================ */
+
+/* Make the side-by-side block stack cleanly */
+@media (max-width: 992px) {
+  .how-we-main-container { min-height: auto; }
+  .image-container { padding: 1rem; }
+}
+
+/* Tone down transforms on mobile */
+@media (max-width: 768px) {
+  .how-we-main-image:hover { transform: none !important; }
+  .process-item { padding: 0.9rem; }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ============================
+   CALENDLY WIDGET
+   ============================ */
+
+/* Let Calendly height adapt across breakpoints */
+.calendly-inline-widget {
+  min-width: 100% !important;
+  height: clamp(520px, 70vh, 760px) !important;
+}
+
+/* On small screens, stack image over Calendly and add spacing */
+@media (max-width: 992px) {
+  .calendly-inline-widget { height: clamp(520px, 72vh, 740px) !important; }
+}
+
+/* ============================
+   UTILITIES
+   ============================ */
+.text-center .btn { white-space: nowrap; }
+.btn.btn-lg { font-size: clamp(0.95rem, 0.6vw + 0.8rem, 1.125rem); }
+
+/* Avoid layout shift when SVGs scale */
+.delivery-card svg,
+.service-icon { width: clamp(40px, 6vw, 48px); height: auto; }
+
+/* Slightly reduce border glows on mobile for perf */
+@media (max-width: 576px) {
+  .how-we-main-container,
+  .service-card,
+  .delivery-card {
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+    background-clip: padding-box;
+  }
+}
+/* One-line card layout */
+.card-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: nowrap;              /* keep on one line */
+}
+
+.card-line .icon-48 {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+}
+
+.card-line .icon-48 svg {
+  width: 48px;
+  height: 48px;
+}
+
+.card-line .text-pack {
+  flex: 1 1 auto;                 /* takes remaining width */
+  min-width: 0;                   /* enables ellipsis */
+}
+
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;        /* … */
+}
+
+/* CTA never wraps */
+.btn-cta {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* Mobile tweaks: smaller CTA + shorter label */
+@media (max-width: 576px) {
+  .btn-cta {
+    padding: .375rem .6rem;       /* btn-sm sizing */
+    font-size: .875rem;
+    border-radius: .5rem;
+  }
+  .cta-full { display: none !important; }   /* hide long label on XS */
+  .cta-short { display: inline !important; }/* show short label on XS */
+}
+
+/* Default desktop/tablet: show full label, hide short */
+.cta-full { display: inline; }
+.cta-short { display: none; }

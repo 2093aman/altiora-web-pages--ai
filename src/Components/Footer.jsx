@@ -75,10 +75,10 @@ const LINK_MAP = {
   career: '/careers',
   contact: '/contact',
   blog: '/blog',
-  'web3 & blockchain': '/developers/web3',
-  'ai & data': '/developers/ai-ml',
-  'web 2.0': '/developers/web2',
-  'mobile & web': '/developers/web2',
+  'web3 & blockchain': '/developers',
+  'ai & data': '/developers',
+  'web 2.0': '/developers',
+  'mobile & web': '/developers',
 };
 
 const hrefFor = (raw) => LINK_MAP[raw.trim().toLowerCase()] ?? null;
