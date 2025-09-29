@@ -1,7 +1,7 @@
 import React from 'react'
 import './Web3.css';
 import bitcoin from '../..//assets/bitcoin.jpg';
-import web3 from  '../../assets/web3.jpg';
+import web3 from '../../assets/web3.jpg';
 import TechnologyStackSection from '../TechnologyStack/TechnologyStackSection';
 
 const Web3Page = () => (
@@ -345,6 +345,247 @@ const Web3Page = () => (
                     </div>
                 </div>
 
+                {/* NEW NEW NEW NEW*/}
+                <div className="row g-4 mb-4">
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <circle cx="24" cy="24" r="20" fill="#ffc107" opacity="0.2" />
+                                        <path d="M24 8L32 16L24 24L16 16L24 8Z" fill="#ffc107" />
+                                        <circle cx="24" cy="32" r="4" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">dApps (Web/Mobile) with Real-Time Analytics</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    From MVP to production: wallets, indexers, event pipelines, and dashboards your team can trust.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    Ask for our “8-week MVP” checklist.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <rect x="8" y="12" width="32" height="24" rx="4" fill="#ffc107" opacity="0.2" />
+                                        <path d="M12 16H36V20H12V16Z" fill="#ffc107" />
+                                        <path d="M12 24H28V28H12V24Z" fill="#ffc107" />
+                                        <circle cx="36" cy="26" r="3" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">Blockchain Payment Processing / P2P Modules</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    Crypto→fiat bridges, P2P frameworks, compliance screens, and dispute tooling.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    Get a costed plan for your geography and KYC regime
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <rect x="6" y="12" width="36" height="24" rx="6" fill="#ffc107" opacity="0.2" />
+                                        <rect x="10" y="16" width="28" height="4" rx="2" fill="#ffc107" />
+                                        <rect x="10" y="24" width="20" height="4" rx="2" fill="#ffc107" />
+                                        <circle cx="38" cy="20" r="2" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">KYC/AML, Analytics & Risk</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    Chain analysis hookups, sanctions checks, fraud rules, and alerting wired into your flows.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    Book a 30-min risk review—leave with a heatmap
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <rect x="8" y="8" width="32" height="32" rx="8" fill="#ffc107" opacity="0.2" />
+                                        <path d="M16 20H32V24H16V20Z" fill="#ffc107" />
+                                        <circle cx="20" cy="30" r="2" fill="#ffc107" />
+                                        <circle cx="28" cy="30" r="2" fill="#ffc107" />
+                                        <path d="M18 14H30L28 18H20L18 14Z" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">Governance & Token Economics</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    Emissions curves, sinks, buyback logic, and dashboards that keep incentives sustainable.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    Request a token-economics sketch for your model.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/*--------------------------*/}
+
+
+
+                {/* NEW NEW NEW NEW*/}
+                <div className="row g-4 mb-4">
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <circle cx="24" cy="24" r="20" fill="#ffc107" opacity="0.2" />
+                                        <path d="M24 8L32 16L24 24L16 16L24 8Z" fill="#ffc107" />
+                                        <circle cx="24" cy="32" r="4" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">Security, Testing & Audit Prep</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    Coverage reports, fuzzing, static analysis, and auditor-grade documentation.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    Run a free contract readiness check.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <rect x="8" y="12" width="32" height="24" rx="4" fill="#ffc107" opacity="0.2" />
+                                        <path d="M12 16H36V20H12V16Z" fill="#ffc107" />
+                                        <path d="M12 24H28V28H12V24Z" fill="#ffc107" />
+                                        <circle cx="36" cy="26" r="3" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">Infra, DevOps & Observability</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    CI/CD, IaC, RPC/indexer strategy, cost-optimized cloud, and 24×7 monitoring.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    We’ll map your infra and give quick wins in 48h.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="card h-100 border border-primary p-4 delivery-card"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '15px',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <div className="card-body text-center">
+                                <div className="mb-4">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <rect x="6" y="12" width="36" height="24" rx="6" fill="#ffc107" opacity="0.2" />
+                                        <rect x="10" y="16" width="28" height="4" rx="2" fill="#ffc107" />
+                                        <rect x="10" y="24" width="20" height="4" rx="2" fill="#ffc107" />
+                                        <circle cx="38" cy="20" r="2" fill="#ffc107" />
+                                    </svg>
+                                </div>
+                                <h4 className="card-title text-white mb-3">Ready-Made Starters (Fixed-Scope, Fixed-Price)</h4>
+                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                    Wallet, Exchanger/CEX, Processing, P2P frameworks—customized and shipped fast.
+                                </p>
+                                <button
+                                    className="btn btn-primary w-100"
+                                    style={{ borderRadius: '10px' }}
+                                >
+                                    Get inclusions/exclusions and a launch date today
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* CTA Button */}
                 <div className="text-center">
                     <button
@@ -360,397 +601,397 @@ const Web3Page = () => (
 
         <TechnologyStackSection />
 
-{/* Services Section */}
-<section className="py-5">
-    <div className="container">
-        <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Our Web3 Services</h2>
-            <p className="lead" style={{ color: '#cccccc' }}>
-                Complete blockchain solutions from smart contracts to decentralized applications
-            </p>
-        </div>
-        <div className="row g-4">
-            <div className="col-lg-4 col-md-6">
-                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
-                    <div className="service-icon-container mb-4">
-                        <div className="service-icon-wrapper">
-                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="45" fill="url(#gradient1)" opacity="0.2"/>
-                                <path d="M30 35h40v5H30v-5zm0 10h40v5H30v-5zm0 10h30v5H30v-5z" fill="url(#gradient1)"/>
-                                <path d="M25 25h50v50H25V25zm5 5v40h40V30H30z" fill="url(#gradient1)" stroke="url(#gradient1)" strokeWidth="1"/>
-                                <circle cx="65" cy="30" r="8" fill="url(#gradient1)"/>
-                                <path d="M60 27l3 3 6-6" stroke="white" strokeWidth="2" fill="none"/>
-                                <defs>
-                                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#667eea"/>
-                                        <stop offset="100%" stopColor="#764ba2"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h4 className="service-title text-white mb-3">Smart Contracts</h4>
-                    <p className="service-description" style={{ color: '#cccccc' }}>
-                        Develop secure, audited smart contracts that automate business processes and ensure transparency in transactions.
+        {/* Services Section */}
+        <section className="py-5">
+            <div className="container">
+                <div className="text-center mb-5">
+                    <h2 className="display-5 fw-bold mb-3">Our Web3 Services</h2>
+                    <p className="lead" style={{ color: '#cccccc' }}>
+                        Complete blockchain solutions from smart contracts to decentralized applications
                     </p>
-                    <div className="service-hover-overlay"></div>
                 </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
-                    <div className="service-icon-container mb-4">
-                        <div className="service-icon-wrapper">
-                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="45" fill="url(#gradient2)" opacity="0.2"/>
-                                <rect x="20" y="30" width="60" height="40" rx="5" fill="url(#gradient2)" opacity="0.3"/>
-                                <rect x="25" y="35" width="50" height="30" rx="3" fill="url(#gradient2)"/>
-                                <circle cx="35" cy="45" r="3" fill="white"/>
-                                <circle cx="50" cy="45" r="3" fill="white"/>
-                                <circle cx="65" cy="45" r="3" fill="white"/>
-                                <path d="M30 55h40v3H30v-3z" fill="white"/>
-                                <path d="M30 60h25v3H30v-3z" fill="white"/>
-                                <defs>
-                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#f093fb"/>
-                                        <stop offset="100%" stopColor="#f5576c"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h4 className="service-title text-white mb-3">DApps Development</h4>
-                    <p className="service-description" style={{ color: '#cccccc' }}>
-                        Build decentralized applications that run on blockchain networks, providing users with full control and ownership.
-                    </p>
-                    <div className="service-hover-overlay"></div>
-                </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
-                    <div className="service-icon-container mb-4">
-                        <div className="service-icon-wrapper">
-                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="45" fill="url(#gradient3)" opacity="0.2"/>
-                                <rect x="25" y="25" width="50" height="35" rx="5" fill="url(#gradient3)" opacity="0.3"/>
-                                <rect x="30" y="30" width="40" height="25" rx="3" fill="url(#gradient3)"/>
-                                <path d="M35 70l5-5 5 5 5-5 5 5 5-5 5 5" stroke="url(#gradient3)" strokeWidth="2" fill="none"/>
-                                <circle cx="40" cy="40" r="3" fill="white"/>
-                                <circle cx="50" cy="40" r="3" fill="white"/>
-                                <circle cx="60" cy="40" r="3" fill="white"/>
-                                <path d="M35 48h30v2H35v-2z" fill="white"/>
-                                <defs>
-                                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#4facfe"/>
-                                        <stop offset="100%" stopColor="#00f2fe"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h4 className="service-title text-white mb-3">NFT Solutions</h4>
-                    <p className="service-description" style={{ color: '#cccccc' }}>
-                        Create and launch NFT marketplaces, collections, and platforms that drive engagement and revenue.
-                    </p>
-                    <div className="service-hover-overlay"></div>
-                </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
-                    <div className="service-icon-container mb-4">
-                        <div className="service-icon-wrapper">
-                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="45" fill="url(#gradient4)" opacity="0.2"/>
-                                <circle cx="30" cy="40" r="12" fill="url(#gradient4)" opacity="0.3"/>
-                                <circle cx="70" cy="40" r="12" fill="url(#gradient4)" opacity="0.3"/>
-                                <circle cx="50" cy="65" r="12" fill="url(#gradient4)" opacity="0.3"/>
-                                <path d="M38 48l12 8M62 48l-12 8M42 57l8-8M58 57l-8-8" stroke="url(#gradient4)" strokeWidth="3"/>
-                                <circle cx="30" cy="40" r="6" fill="url(#gradient4)"/>
-                                <circle cx="70" cy="40" r="6" fill="url(#gradient4)"/>
-                                <circle cx="50" cy="65" r="6" fill="url(#gradient4)"/>
-                                <defs>
-                                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#fa709a"/>
-                                        <stop offset="100%" stopColor="#fee140"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h4 className="service-title text-white mb-3">DeFi Platforms</h4>
-                    <p className="service-description" style={{ color: '#cccccc' }}>
-                        Build decentralized finance applications including DEXs, lending platforms, and yield farming solutions.
-                    </p>
-                    <div className="service-hover-overlay"></div>
-                </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
-                    <div className="service-icon-container mb-4">
-                        <div className="service-icon-wrapper">
-                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="45" fill="url(#gradient5)" opacity="0.2"/>
-                                <rect x="20" y="35" width="60" height="30" rx="5" fill="url(#gradient5)" opacity="0.3"/>
-                                <circle cx="35" cy="50" r="8" fill="url(#gradient5)"/>
-                                <circle cx="65" cy="50" r="8" fill="url(#gradient5)"/>
-                                <path d="M43 50h14" stroke="url(#gradient5)" strokeWidth="4"/>
-                                <path d="M25 25h50v5H25v-5z" fill="url(#gradient5)"/>
-                                <path d="M25 70h50v5H25v-5z" fill="url(#gradient5)"/>
-                                <circle cx="50" cy="27" r="2" fill="white"/>
-                                <circle cx="50" cy="73" r="2" fill="white"/>
-                                <defs>
-                                    <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#a8edea"/>
-                                        <stop offset="100%" stopColor="#fed6e3"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h4 className="service-title text-white mb-3">Blockchain Integration</h4>
-                    <p className="service-description" style={{ color: '#cccccc' }}>
-                        Integrate blockchain technology into existing systems and workflows for enhanced security and transparency.
-                    </p>
-                    <div className="service-hover-overlay"></div>
-                </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-                <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
-                    <div className="service-icon-container mb-4">
-                        <div className="service-icon-wrapper">
-                            <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
-                                <circle cx="50" cy="50" r="45" fill="url(#gradient6)" opacity="0.2"/>
-                                <circle cx="50" cy="50" r="25" fill="url(#gradient6)" opacity="0.3"/>
-                                <circle cx="50" cy="50" r="15" fill="url(#gradient6)"/>
-                                <path d="M35 35l30 30M65 35l-30 30" stroke="white" strokeWidth="3"/>
-                                <circle cx="50" cy="25" r="4" fill="url(#gradient6)"/>
-                                <circle cx="75" cy="50" r="4" fill="url(#gradient6)"/>
-                                <circle cx="50" cy="75" r="4" fill="url(#gradient6)"/>
-                                <circle cx="25" cy="50" r="4" fill="url(#gradient6)"/>
-                                <defs>
-                                    <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#ffecd2"/>
-                                        <stop offset="100%" stopColor="#fcb69f"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <h4 className="service-title text-white mb-3">Security Audits</h4>
-                    <p className="service-description" style={{ color: '#cccccc' }}>
-                        Comprehensive security audits and testing to ensure your blockchain applications are secure and reliable.
-                    </p>
-                    <div className="service-hover-overlay"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-{/* How We Do It Section */}
-<section className="py-5" style={{ backgroundColor: '#060615' }}>
-    <div className="container">
-        <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-4" style={{ color: '#ffffff' }}>How We Do It</h2>
-            <p className="lead" style={{ color: '#cccccc' }}>
-                Our proven methodology ensures successful blockchain project delivery
-            </p>
-        </div>
-        
-        {/* Side-by-Side Layout: Image + Process Steps */}
-        <div 
-            className="how-we-main-container p-4"
-            style={{
-                background: 'linear-gradient(135deg, #1a1a3a 0%, #2a2a4a 100%)',
-                borderRadius: '20px',
-                border: '2px solid rgba(255, 193, 7, 0.3)'
-            }}
-        >
-            <div className="row g-4 align-items-center">
-                {/* Bitcoin Image - Left Side on Desktop, First on Mobile */}
-                <div className="col-lg-6 order-1 order-lg-1">
-                    <div className="image-container text-center">
-                        <img
-                            src={bitcoin}
-                            alt="How We Do It - Blockchain Development Process"
-                            className="img-fluid"
-                            style={{
-                                width: '100%',
-                                maxWidth: '500px',
-                                height: 'auto',
-                                borderRadius: '15px',
-                                filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.4))',
-                                border: '2px solid rgba(255, 193, 7, 0.2)'
-                            }}
-                            onError={(e) => {
-                                // Fallback if image doesn't load
-                                e.target.style.display = 'none';
-                                e.target.nextElementSibling.style.display = 'block';
-                            }}
-                        />
-                        
-                        {/* Fallback if image doesn't load */}
-                        <div
-                            className="image-fallback d-none"
-                            style={{
-                                width: '100%',
-                                maxWidth: '500px',
-                                height: '400px',
-                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                borderRadius: '15px',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                margin: '0 auto',
-                                border: '2px solid rgba(255, 193, 7, 0.2)'
-                            }}
-                        >
-                            <i className="fab fa-bitcoin text-warning" style={{ fontSize: '80px' }}></i>
-                            <h4 className="text-white mb-2">Blockchain Innovation</h4>
-                            <p className="text-white opacity-75">Building the future of Web3</p>
-                        </div>
-                    </div>
-                </div>
-                
-                {/* Process Steps - Right Side on Desktop, Second on Mobile */}
-                <div className="col-lg-6 order-2 order-lg-2">
-                    <div className="process-steps-container">
-                        {/* Process Item 1 */}
-                        <div className="process-item d-flex align-items-start mb-4">
-                            <div className="process-number me-3">
-                                <div 
-                                    className="rounded-circle d-flex align-items-center justify-content-center"
-                                    style={{
-                                        width: '50px',
-                                        height: '50px',
-                                        backgroundColor: '#ffc107',
-                                        fontSize: '1.2rem',
-                                        fontWeight: 'bold',
-                                        color: '#000'
-                                    }}
-                                >
-                                    01
+                <div className="row g-4">
+                    <div className="col-lg-4 col-md-6">
+                        <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                            <div className="service-icon-container mb-4">
+                                <div className="service-icon-wrapper">
+                                    <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="45" fill="url(#gradient1)" opacity="0.2" />
+                                        <path d="M30 35h40v5H30v-5zm0 10h40v5H30v-5zm0 10h30v5H30v-5z" fill="url(#gradient1)" />
+                                        <path d="M25 25h50v50H25V25zm5 5v40h40V30H30z" fill="url(#gradient1)" stroke="url(#gradient1)" strokeWidth="1" />
+                                        <circle cx="65" cy="30" r="8" fill="url(#gradient1)" />
+                                        <path d="M60 27l3 3 6-6" stroke="white" strokeWidth="2" fill="none" />
+                                        <defs>
+                                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#667eea" />
+                                                <stop offset="100%" stopColor="#764ba2" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                 </div>
                             </div>
-                            <div className="process-content">
-                                <h5 className="text-warning mb-2 fw-bold">Audit Ready</h5>
-                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
-                                    Contracts ship with tests, invariants, fuzzing, coverage reports, and auditor grade docs
-                                </p>
-                            </div>
+                            <h4 className="service-title text-white mb-3">Smart Contracts</h4>
+                            <p className="service-description" style={{ color: '#cccccc' }}>
+                                Develop secure, audited smart contracts that automate business processes and ensure transparency in transactions.
+                            </p>
+                            <div className="service-hover-overlay"></div>
                         </div>
-                        
-                        {/* Process Item 2 */}
-                        <div className="process-item d-flex align-items-start mb-4">
-                            <div className="process-number me-3">
-                                <div 
-                                    className="rounded-circle d-flex align-items-center justify-content-center"
-                                    style={{
-                                        width: '50px',
-                                        height: '50px',
-                                        backgroundColor: '#ffc107',
-                                        fontSize: '1.2rem',
-                                        fontWeight: 'bold',
-                                        color: '#000'
-                                    }}
-                                >
-                                    02
+                    </div>
+
+                    <div className="col-lg-4 col-md-6">
+                        <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                            <div className="service-icon-container mb-4">
+                                <div className="service-icon-wrapper">
+                                    <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="45" fill="url(#gradient2)" opacity="0.2" />
+                                        <rect x="20" y="30" width="60" height="40" rx="5" fill="url(#gradient2)" opacity="0.3" />
+                                        <rect x="25" y="35" width="50" height="30" rx="3" fill="url(#gradient2)" />
+                                        <circle cx="35" cy="45" r="3" fill="white" />
+                                        <circle cx="50" cy="45" r="3" fill="white" />
+                                        <circle cx="65" cy="45" r="3" fill="white" />
+                                        <path d="M30 55h40v3H30v-3z" fill="white" />
+                                        <path d="M30 60h25v3H30v-3z" fill="white" />
+                                        <defs>
+                                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#f093fb" />
+                                                <stop offset="100%" stopColor="#f5576c" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                 </div>
                             </div>
-                            <div className="process-content">
-                                <h5 className="text-warning mb-2 fw-bold">Built In Weeks</h5>
-                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
-                                    Productised sprints for wallets, DEX, payments, DePIN & AA so you ship fast and de-risk early
-                                </p>
-                            </div>
+                            <h4 className="service-title text-white mb-3">DApps Development</h4>
+                            <p className="service-description" style={{ color: '#cccccc' }}>
+                                Build decentralized applications that run on blockchain networks, providing users with full control and ownership.
+                            </p>
+                            <div className="service-hover-overlay"></div>
                         </div>
-                        
-                        {/* Process Item 3 */}
-                        <div className="process-item d-flex align-items-start mb-4">
-                            <div className="process-number me-3">
-                                <div 
-                                    className="rounded-circle d-flex align-items-center justify-content-center"
-                                    style={{
-                                        width: '50px',
-                                        height: '50px',
-                                        backgroundColor: '#ffc107',
-                                        fontSize: '1.2rem',
-                                        fontWeight: 'bold',
-                                        color: '#000'
-                                    }}
-                                >
-                                    03
+                    </div>
+
+                    <div className="col-lg-4 col-md-6">
+                        <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                            <div className="service-icon-container mb-4">
+                                <div className="service-icon-wrapper">
+                                    <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="45" fill="url(#gradient3)" opacity="0.2" />
+                                        <rect x="25" y="25" width="50" height="35" rx="5" fill="url(#gradient3)" opacity="0.3" />
+                                        <rect x="30" y="30" width="40" height="25" rx="3" fill="url(#gradient3)" />
+                                        <path d="M35 70l5-5 5 5 5-5 5 5 5-5 5 5" stroke="url(#gradient3)" strokeWidth="2" fill="none" />
+                                        <circle cx="40" cy="40" r="3" fill="white" />
+                                        <circle cx="50" cy="40" r="3" fill="white" />
+                                        <circle cx="60" cy="40" r="3" fill="white" />
+                                        <path d="M35 48h30v2H35v-2z" fill="white" />
+                                        <defs>
+                                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#4facfe" />
+                                                <stop offset="100%" stopColor="#00f2fe" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                 </div>
                             </div>
-                            <div className="process-content">
-                                <h5 className="text-warning mb-2 fw-bold">Tokenomics That Sustain</h5>
-                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
-                                    Emissions curves, sinks, fee capture, and dashboards so tokens drive utility—not just speculation
-                                </p>
-                            </div>
+                            <h4 className="service-title text-white mb-3">NFT Solutions</h4>
+                            <p className="service-description" style={{ color: '#cccccc' }}>
+                                Create and launch NFT marketplaces, collections, and platforms that drive engagement and revenue.
+                            </p>
+                            <div className="service-hover-overlay"></div>
                         </div>
-                        
-                        {/* Process Item 4 */}
-                        <div className="process-item d-flex align-items-start mb-4">
-                            <div className="process-number me-3">
-                                <div 
-                                    className="rounded-circle d-flex align-items-center justify-content-center"
-                                    style={{
-                                        width: '50px',
-                                        height: '50px',
-                                        backgroundColor: '#ffc107',
-                                        fontSize: '1.2rem',
-                                        fontWeight: 'bold',
-                                        color: '#000'
-                                    }}
-                                >
-                                    04
+                    </div>
+
+                    <div className="col-lg-4 col-md-6">
+                        <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                            <div className="service-icon-container mb-4">
+                                <div className="service-icon-wrapper">
+                                    <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="45" fill="url(#gradient4)" opacity="0.2" />
+                                        <circle cx="30" cy="40" r="12" fill="url(#gradient4)" opacity="0.3" />
+                                        <circle cx="70" cy="40" r="12" fill="url(#gradient4)" opacity="0.3" />
+                                        <circle cx="50" cy="65" r="12" fill="url(#gradient4)" opacity="0.3" />
+                                        <path d="M38 48l12 8M62 48l-12 8M42 57l8-8M58 57l-8-8" stroke="url(#gradient4)" strokeWidth="3" />
+                                        <circle cx="30" cy="40" r="6" fill="url(#gradient4)" />
+                                        <circle cx="70" cy="40" r="6" fill="url(#gradient4)" />
+                                        <circle cx="50" cy="65" r="6" fill="url(#gradient4)" />
+                                        <defs>
+                                            <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#fa709a" />
+                                                <stop offset="100%" stopColor="#fee140" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                 </div>
                             </div>
-                            <div className="process-content">
-                                <h5 className="text-warning mb-2 fw-bold">On-Chain Payments & Treasury Ops</h5>
-                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
-                                    Stablecoin rails, invoicing, reconciliation, and policy-driven payouts that finance teams trust
-                                </p>
-                            </div>
+                            <h4 className="service-title text-white mb-3">DeFi Platforms</h4>
+                            <p className="service-description" style={{ color: '#cccccc' }}>
+                                Build decentralized finance applications including DEXs, lending platforms, and yield farming solutions.
+                            </p>
+                            <div className="service-hover-overlay"></div>
                         </div>
-                        
-                        {/* Process Item 5 */}
-                        <div className="process-item d-flex align-items-start">
-                            <div className="process-number me-3">
-                                <div 
-                                    className="rounded-circle d-flex align-items-center justify-content-center"
-                                    style={{
-                                        width: '50px',
-                                        height: '50px',
-                                        backgroundColor: '#ffc107',
-                                        fontSize: '1.2rem',
-                                        fontWeight: 'bold',
-                                        color: '#000'
-                                    }}
-                                >
-                                    05
+                    </div>
+
+                    <div className="col-lg-4 col-md-6">
+                        <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                            <div className="service-icon-container mb-4">
+                                <div className="service-icon-wrapper">
+                                    <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="45" fill="url(#gradient5)" opacity="0.2" />
+                                        <rect x="20" y="35" width="60" height="30" rx="5" fill="url(#gradient5)" opacity="0.3" />
+                                        <circle cx="35" cy="50" r="8" fill="url(#gradient5)" />
+                                        <circle cx="65" cy="50" r="8" fill="url(#gradient5)" />
+                                        <path d="M43 50h14" stroke="url(#gradient5)" strokeWidth="4" />
+                                        <path d="M25 25h50v5H25v-5z" fill="url(#gradient5)" />
+                                        <path d="M25 70h50v5H25v-5z" fill="url(#gradient5)" />
+                                        <circle cx="50" cy="27" r="2" fill="white" />
+                                        <circle cx="50" cy="73" r="2" fill="white" />
+                                        <defs>
+                                            <linearGradient id="gradient5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#a8edea" />
+                                                <stop offset="100%" stopColor="#fed6e3" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                 </div>
                             </div>
-                            <div className="process-content">
-                                <h5 className="text-warning mb-2 fw-bold">Fixed Scope, Fixed Price, Warranty</h5>
-                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
-                                    Clear inclusions/exclusions milestones billing, and a post-launch stabilisation window (We deliver Bug Bounties as and when required)
-                                </p>
+                            <h4 className="service-title text-white mb-3">Blockchain Integration</h4>
+                            <p className="service-description" style={{ color: '#cccccc' }}>
+                                Integrate blockchain technology into existing systems and workflows for enhanced security and transparency.
+                            </p>
+                            <div className="service-hover-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6">
+                        <div className="service-card h-100 p-4" style={{ backgroundColor: '#1a1a3a' }}>
+                            <div className="service-icon-container mb-4">
+                                <div className="service-icon-wrapper">
+                                    <svg className="service-icon" width="64" height="64" viewBox="0 0 100 100" fill="none">
+                                        <circle cx="50" cy="50" r="45" fill="url(#gradient6)" opacity="0.2" />
+                                        <circle cx="50" cy="50" r="25" fill="url(#gradient6)" opacity="0.3" />
+                                        <circle cx="50" cy="50" r="15" fill="url(#gradient6)" />
+                                        <path d="M35 35l30 30M65 35l-30 30" stroke="white" strokeWidth="3" />
+                                        <circle cx="50" cy="25" r="4" fill="url(#gradient6)" />
+                                        <circle cx="75" cy="50" r="4" fill="url(#gradient6)" />
+                                        <circle cx="50" cy="75" r="4" fill="url(#gradient6)" />
+                                        <circle cx="25" cy="50" r="4" fill="url(#gradient6)" />
+                                        <defs>
+                                            <linearGradient id="gradient6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#ffecd2" />
+                                                <stop offset="100%" stopColor="#fcb69f" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h4 className="service-title text-white mb-3">Security Audits</h4>
+                            <p className="service-description" style={{ color: '#cccccc' }}>
+                                Comprehensive security audits and testing to ensure your blockchain applications are secure and reliable.
+                            </p>
+                            <div className="service-hover-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        {/* How We Do It Section */}
+        <section className="py-5" style={{ backgroundColor: '#060615' }}>
+            <div className="container">
+                <div className="text-center mb-5">
+                    <h2 className="display-5 fw-bold mb-4" style={{ color: '#ffffff' }}>How We Do It</h2>
+                    <p className="lead" style={{ color: '#cccccc' }}>
+                        Our proven methodology ensures successful blockchain project delivery
+                    </p>
+                </div>
+
+                {/* Side-by-Side Layout: Image + Process Steps */}
+                <div
+                    className="how-we-main-container p-4"
+                    style={{
+                        background: 'linear-gradient(135deg, #1a1a3a 0%, #2a2a4a 100%)',
+                        borderRadius: '20px',
+                        border: '2px solid rgba(255, 193, 7, 0.3)'
+                    }}
+                >
+                    <div className="row g-4 align-items-center">
+                        {/* Bitcoin Image - Left Side on Desktop, First on Mobile */}
+                        <div className="col-lg-6 order-1 order-lg-1">
+                            <div className="image-container text-center">
+                                <img
+                                    src={bitcoin}
+                                    alt="How We Do It - Blockchain Development Process"
+                                    className="img-fluid"
+                                    style={{
+                                        width: '100%',
+                                        maxWidth: '500px',
+                                        height: 'auto',
+                                        borderRadius: '15px',
+                                        filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.4))',
+                                        border: '2px solid rgba(255, 193, 7, 0.2)'
+                                    }}
+                                    onError={(e) => {
+                                        // Fallback if image doesn't load
+                                        e.target.style.display = 'none';
+                                        e.target.nextElementSibling.style.display = 'block';
+                                    }}
+                                />
+
+                                {/* Fallback if image doesn't load */}
+                                <div
+                                    className="image-fallback d-none"
+                                    style={{
+                                        width: '100%',
+                                        maxWidth: '500px',
+                                        height: '400px',
+                                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                        borderRadius: '15px',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        margin: '0 auto',
+                                        border: '2px solid rgba(255, 193, 7, 0.2)'
+                                    }}
+                                >
+                                    <i className="fab fa-bitcoin text-warning" style={{ fontSize: '80px' }}></i>
+                                    <h4 className="text-white mb-2">Blockchain Innovation</h4>
+                                    <p className="text-white opacity-75">Building the future of Web3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Process Steps - Right Side on Desktop, Second on Mobile */}
+                        <div className="col-lg-6 order-2 order-lg-2">
+                            <div className="process-steps-container">
+                                {/* Process Item 1 */}
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-3">
+                                        <div
+                                            className="rounded-circle d-flex align-items-center justify-content-center"
+                                            style={{
+                                                width: '50px',
+                                                height: '50px',
+                                                backgroundColor: '#ffc107',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                color: '#000'
+                                            }}
+                                        >
+                                            01
+                                        </div>
+                                    </div>
+                                    <div className="process-content">
+                                        <h5 className="text-warning mb-2 fw-bold">Audit Ready</h5>
+                                        <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                            Contracts ship with tests, invariants, fuzzing, coverage reports, and auditor grade docs
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Process Item 2 */}
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-3">
+                                        <div
+                                            className="rounded-circle d-flex align-items-center justify-content-center"
+                                            style={{
+                                                width: '50px',
+                                                height: '50px',
+                                                backgroundColor: '#ffc107',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                color: '#000'
+                                            }}
+                                        >
+                                            02
+                                        </div>
+                                    </div>
+                                    <div className="process-content">
+                                        <h5 className="text-warning mb-2 fw-bold">Built In Weeks</h5>
+                                        <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                            Productised sprints for wallets, DEX, payments, DePIN & AA so you ship fast and de-risk early
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Process Item 3 */}
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-3">
+                                        <div
+                                            className="rounded-circle d-flex align-items-center justify-content-center"
+                                            style={{
+                                                width: '50px',
+                                                height: '50px',
+                                                backgroundColor: '#ffc107',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                color: '#000'
+                                            }}
+                                        >
+                                            03
+                                        </div>
+                                    </div>
+                                    <div className="process-content">
+                                        <h5 className="text-warning mb-2 fw-bold">Tokenomics That Sustain</h5>
+                                        <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                            Emissions curves, sinks, fee capture, and dashboards so tokens drive utility—not just speculation
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Process Item 4 */}
+                                <div className="process-item d-flex align-items-start mb-4">
+                                    <div className="process-number me-3">
+                                        <div
+                                            className="rounded-circle d-flex align-items-center justify-content-center"
+                                            style={{
+                                                width: '50px',
+                                                height: '50px',
+                                                backgroundColor: '#ffc107',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                color: '#000'
+                                            }}
+                                        >
+                                            04
+                                        </div>
+                                    </div>
+                                    <div className="process-content">
+                                        <h5 className="text-warning mb-2 fw-bold">On-Chain Payments & Treasury Ops</h5>
+                                        <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                            Stablecoin rails, invoicing, reconciliation, and policy-driven payouts that finance teams trust
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Process Item 5 */}
+                                <div className="process-item d-flex align-items-start">
+                                    <div className="process-number me-3">
+                                        <div
+                                            className="rounded-circle d-flex align-items-center justify-content-center"
+                                            style={{
+                                                width: '50px',
+                                                height: '50px',
+                                                backgroundColor: '#ffc107',
+                                                fontSize: '1.2rem',
+                                                fontWeight: 'bold',
+                                                color: '#000'
+                                            }}
+                                        >
+                                            05
+                                        </div>
+                                    </div>
+                                    <div className="process-content">
+                                        <h5 className="text-warning mb-2 fw-bold">Fixed Scope, Fixed Price, Warranty</h5>
+                                        <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                            Clear inclusions/exclusions milestones billing, and a post-launch stabilisation window (We deliver Bug Bounties as and when required)
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
         {/* CTA Section */}
