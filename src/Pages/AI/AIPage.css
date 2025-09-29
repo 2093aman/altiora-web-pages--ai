@@ -1,0 +1,598 @@
+/* AI Page Futuristic CSS */
+
+/* AI Gradient Text Animation */
+.ai-gradient-text {
+  background: linear-gradient(45deg, #ffc107, #00ff88, #4ecdc4, #ff6b6b);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: ai-gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes ai-gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* AI CTA Button */
+.ai-cta-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.ai-cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.ai-cta-btn:hover::before {
+  left: 100%;
+}
+
+.ai-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.4);
+}
+
+/* AI Hero Container */
+.ai-hero-container {
+  position: relative;
+}
+
+.ai-hero-visual {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(45deg, #667eea 0%, #764ba2 100%) padding-box,
+    linear-gradient(45deg, #ffc107, #00ff88, #4ecdc4, #ff6b6b) border-box;
+  animation: ai-hero-pulse 4s ease-in-out infinite;
+}
+
+@keyframes ai-hero-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 20px rgba(255, 193, 7, 0.3),
+      0 0 40px rgba(0, 255, 136, 0.2),
+      0 0 60px rgba(78, 205, 196, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 30px rgba(255, 193, 7, 0.5),
+      0 0 60px rgba(0, 255, 136, 0.3),
+      0 0 80px rgba(78, 205, 196, 0.2);
+  }
+}
+
+.ai-hero-visual:hover {
+  transform: scale(1.02) rotateY(5deg);
+  background: 
+    linear-gradient(45deg, #764ba2 0%, #667eea 100%) padding-box,
+    linear-gradient(45deg, #ff6b6b, #4ecdc4, #00ff88, #ffc107) border-box;
+}
+
+/* AI Brain Animation */
+.ai-brain-icon i {
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: ai-brain-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes ai-brain-glow {
+  0% {
+    text-shadow: 
+      0 0 20px rgba(255, 193, 7, 0.6),
+      0 0 40px rgba(255, 193, 7, 0.4),
+      0 0 60px rgba(255, 193, 7, 0.2);
+  }
+  100% {
+    text-shadow: 
+      0 0 30px rgba(255, 193, 7, 0.8),
+      0 0 60px rgba(255, 193, 7, 0.6),
+      0 0 80px rgba(255, 193, 7, 0.3);
+  }
+}
+
+.ai-hero-visual:hover .ai-brain-icon i {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* AI Particles */
+.ai-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ai-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(45deg, #ffc107, #00ff88);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: ai-particle-float 4s ease-in-out infinite;
+}
+
+.ai-particle-1 {
+  top: 15%;
+  left: 15%;
+  animation-delay: 0s;
+  background: linear-gradient(45deg, #ffc107, #ff6b6b);
+}
+
+.ai-particle-2 {
+  top: 20%;
+  right: 20%;
+  animation-delay: 0.5s;
+  background: linear-gradient(45deg, #00ff88, #4ecdc4);
+}
+
+.ai-particle-3 {
+  top: 50%;
+  left: 10%;
+  animation-delay: 1s;
+  background: linear-gradient(45deg, #4ecdc4, #ff6b6b);
+}
+
+.ai-particle-4 {
+  bottom: 30%;
+  left: 25%;
+  animation-delay: 1.5s;
+  background: linear-gradient(45deg, #ff6b6b, #ffc107);
+}
+
+.ai-particle-5 {
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 2s;
+  background: linear-gradient(45deg, #00ff88, #ffc107);
+}
+
+.ai-particle-6 {
+  top: 70%;
+  right: 30%;
+  animation-delay: 2.5s;
+  background: linear-gradient(45deg, #4ecdc4, #00ff88);
+}
+
+@keyframes ai-particle-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(0.8);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(20px, -30px) scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-15px, 25px) scale(1);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translate(25px, -20px) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Neural Network Lines */
+.neural-network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.neural-line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(255, 193, 7, 0.6), transparent);
+  height: 2px;
+  animation: neural-pulse 3s ease-in-out infinite;
+}
+
+.neural-line-1 {
+  top: 30%;
+  left: 20%;
+  width: 60%;
+  animation-delay: 0s;
+}
+
+.neural-line-2 {
+  top: 60%;
+  left: 15%;
+  width: 70%;
+  animation-delay: 1s;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.6), transparent);
+}
+
+.neural-line-3 {
+  top: 45%;
+  left: 25%;
+  width: 50%;
+  animation-delay: 2s;
+  background: linear-gradient(90deg, transparent, rgba(78, 205, 196, 0.6), transparent);
+}
+
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scaleX(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.2);
+  }
+}
+
+/* AI Benefit Cards */
+.ai-benefit-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.8s ease;
+  z-index: 1;
+}
+
+.ai-benefit-card:hover::before {
+  left: 100%;
+}
+
+.ai-benefit-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  border-color: #ffc107;
+  box-shadow: 
+    0 25px 50px rgba(255, 193, 7, 0.3),
+    0 15px 35px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #2a2a4a, #1a1a3a) !important;
+}
+
+/* AI Icon Container */
+.ai-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.ai-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.ai-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.ai-benefit-card:hover .ai-icon-wrapper::before {
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.ai-benefit-card:hover .ai-icon-wrapper i {
+  transform: rotateY(360deg) scale(1.2);
+  filter: drop-shadow(0 0 20px currentColor);
+}
+
+/* AI Solution Cards */
+.ai-solution-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.ai-solution-card:hover {
+  transform: translateY(-10px);
+  border-color: #ffc107 !important;
+  box-shadow: 0 15px 35px rgba(255, 193, 7, 0.3);
+  background: linear-gradient(145deg, #2a2a4a, #1a1a3a) !important;
+}
+
+.ai-solution-card:hover .btn-primary {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #000 !important;
+  transform: scale(1.05);
+}
+
+.ai-solution-card:hover i {
+  transform: scale(1.1) rotateY(180deg);
+  transition: transform 0.5s ease;
+}
+
+/* Industry Cards */
+.industry-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 193, 7, 0.5);
+  box-shadow: 0 15px 30px rgba(255, 193, 7, 0.2);
+  background: linear-gradient(145deg, #1a1a3a, #2a2a4a) !important;
+}
+
+.industry-card:hover i {
+  transform: scale(1.2) rotate(360deg);
+  transition: transform 0.6s ease;
+}
+
+.industry-card:hover h5 {
+  color: #ffc107 !important;
+  transition: color 0.3s ease;
+}
+
+/* Card Entrance Animations */
+@keyframes ai-card-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.ai-benefit-card {
+  animation: ai-card-entrance 0.8s ease-out forwards;
+}
+
+.ai-solution-card {
+  animation: ai-card-entrance 0.8s ease-out forwards;
+}
+
+.industry-card {
+  animation: ai-card-entrance 0.8s ease-out forwards;
+}
+
+/* Staggered entrance animation */
+.ai-benefit-card:nth-child(1) { animation-delay: 0.1s; }
+.ai-benefit-card:nth-child(2) { animation-delay: 0.2s; }
+.ai-benefit-card:nth-child(3) { animation-delay: 0.3s; }
+.ai-benefit-card:nth-child(4) { animation-delay: 0.4s; }
+.ai-benefit-card:nth-child(5) { animation-delay: 0.5s; }
+.ai-benefit-card:nth-child(6) { animation-delay: 0.6s; }
+
+.ai-solution-card:nth-child(1) { animation-delay: 0.1s; }
+.ai-solution-card:nth-child(2) { animation-delay: 0.2s; }
+.ai-solution-card:nth-child(3) { animation-delay: 0.3s; }
+.ai-solution-card:nth-child(4) { animation-delay: 0.4s; }
+.ai-solution-card:nth-child(5) { animation-delay: 0.5s; }
+.ai-solution-card:nth-child(6) { animation-delay: 0.6s; }
+.ai-solution-card:nth-child(7) { animation-delay: 0.7s; }
+.ai-solution-card:nth-child(8) { animation-delay: 0.8s; }
+
+.industry-card:nth-child(1) { animation-delay: 0.2s; }
+.industry-card:nth-child(2) { animation-delay: 0.4s; }
+.industry-card:nth-child(3) { animation-delay: 0.6s; }
+.industry-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* Futuristic Glow Effects */
+.ai-glow-effect {
+  position: relative;
+}
+
+.ai-glow-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffc107, #00ff88, #4ecdc4, #ff6b6b);
+  opacity: 0;
+  border-radius: inherit;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.ai-glow-effect:hover::after {
+  opacity: 0.2;
+  animation: ai-glow-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes ai-glow-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.4;
+  }
+}
+
+/* AI Typography Enhancement */
+h1, h2, h3, h4, h5 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Futuristic Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ai-hero-visual {
+    height: 300px !important;
+  }
+  
+  .ai-brain-icon i {
+    font-size: 60px !important;
+  }
+  
+  .ai-benefit-card {
+    margin-bottom: 2rem;
+  }
+  
+  .ai-solution-card {
+    margin-bottom: 2rem;
+  }
+  
+  .industry-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ai-particle {
+    width: 6px !important;
+    height: 6px !important;
+  }
+  
+  .neural-line {
+    height: 1px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .ai-hero-visual {
+    height: 250px !important;
+  }
+  
+  .ai-brain-icon i {
+    font-size: 50px !important;
+  }
+  
+  .ai-benefit-card:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+  
+  .ai-solution-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .industry-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+  
+  .display-5 {
+    font-size: 2rem !important;
+  }
+}
+
+/* Loading Animation for AI Elements */
+@keyframes ai-loading {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.ai-benefit-card,
+.ai-solution-card,
+.industry-card {
+  animation: ai-loading 1s ease-out forwards;
+}
+
+/* Scrolling Animation Trigger */
+@keyframes ai-scroll-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional Futuristic Elements */
+.ai-data-stream {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #00ff88, transparent);
+  animation: ai-data-flow 2s linear infinite;
+}
+
+@keyframes ai-data-flow {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
