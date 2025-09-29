@@ -1,6 +1,8 @@
 import React from 'react'
 import './AIPage.css';
 import aiImage from '../../assets/ai.jpg';
+import AICorouselSection from '../../Components/AICorousel';
+import SolutionsCarousel from '../../Components/SolutionsCarousel';
 
 const AIPage = () => (
     <div style={{ backgroundColor: '#060615', minHeight: '100vh', color: '#ffffff' }}>
@@ -16,8 +18,8 @@ const AIPage = () => (
                             <span className="text-primary display-6 ai-gradient-text">Artificial Intelligence</span>
                         </h1>
                         <p className="lead mb-4" style={{ color: '#cccccc' }}>
-                            Harness the power of AI to automate processes, gain insights, and drive innovation. 
-                            From machine learning to natural language processing, we build intelligent solutions 
+                            Harness the power of AI to automate processes, gain insights, and drive innovation.
+                            From machine learning to natural language processing, we build intelligent solutions
                             that give your business a competitive edge.
                         </p>
                         <div className="d-flex gap-3">
@@ -38,14 +40,185 @@ const AIPage = () => (
             </div>
         </section>
 
+        {/* Statistics Section - Add this to your AIPage.jsx */}
+        <section className="py-5" style={{ backgroundColor: '#060615' }}>
+            <div className="container">
+                <div className="text-center mb-5">
+                    <h2 className="display-5 fw-bold mb-4" style={{ color: '#ffffff' }}>
+                        Empowering Global Innovators Across Industries
+                    </h2>
+                </div>
+
+                <div className="row g-4">
+                    {/* Years of Business */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="stats-card text-center p-4"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer',
+                                height: '100%'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            <h2 className="display-3 fw-bold mb-3" style={{
+                                color: '#64B5F6',
+                                fontWeight: '700'
+                            }}>
+                                5+
+                            </h2>
+                            <p className="mb-0" style={{
+                                color: '#ffffff',
+                                fontSize: '1.1rem',
+                                fontWeight: '500'
+                            }}>
+                                Years of Business
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Customers */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="stats-card text-center p-4"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer',
+                                height: '100%'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            <h2 className="display-3 fw-bold mb-3" style={{
+                                color: '#64B5F6',
+                                fontWeight: '700'
+                            }}>
+                                120+
+                            </h2>
+                            <p className="mb-0" style={{
+                                color: '#ffffff',
+                                fontSize: '1.1rem',
+                                fontWeight: '500'
+                            }}>
+                                Customers
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Countries */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="stats-card text-center p-4"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer',
+                                height: '100%'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            <h2 className="display-3 fw-bold mb-3" style={{
+                                color: '#64B5F6',
+                                fontWeight: '700'
+                            }}>
+                                20+
+                            </h2>
+                            <p className="mb-0" style={{
+                                color: '#ffffff',
+                                fontSize: '1.1rem',
+                                fontWeight: '500'
+                            }}>
+                                Countries
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Industries Choose Us */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="stats-card text-center p-4"
+                            style={{
+                                backgroundColor: '#1a1a3a',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer',
+                                height: '100%'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            <h2 className="display-3 fw-bold mb-3" style={{
+                                color: '#64B5F6',
+                                fontWeight: '700'
+                            }}>
+                                80%
+                            </h2>
+                            <p className="mb-0" style={{
+                                color: '#ffffff',
+                                fontSize: '1.1rem',
+                                fontWeight: '500'
+                            }}>
+                                Industries Choose Us
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <AICorouselSection />
+
         {/* Why AI is Important Section */}
         <section className="py-5">
             <div className="container">
                 <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-4">Why AI is Critical for Modern Business</h2>
+                    <h2 className="display-5 fw-bold mb-4">Why AI-First Product Engineering?</h2>
                     <p className="lead" style={{ color: '#cccccc', maxWidth: '900px', margin: '0 auto' }}>
-                        Artificial Intelligence isn't just the future—it's the present. Companies leveraging AI 
-                        are seeing unprecedented growth, efficiency, and competitive advantages.
+                        The modern day businesses require smart, flexible and scalable solutions.
+                        The purpose of AI-powered products is to bring life to processes, giving services and experiences to a higher level in a scaled version.
                     </p>
                 </div>
 
@@ -57,10 +230,9 @@ const AIPage = () => (
                                     <i className="fas fa-chart-line" style={{ fontSize: '3rem', color: '#00ff88' }}></i>
                                 </div>
                             </div>
-                            <h4 className="text-white mb-3">Boost Productivity by 40%</h4>
+                            <h4 className="text-white mb-3">Scalability</h4>
                             <p style={{ color: '#cccccc' }}>
-                                AI automates repetitive tasks, allowing your team to focus on strategic initiatives 
-                                and creative problem-solving. Studies show 40% productivity increases across industries.
+                                AI driven architecture adapt to growing workloads and dynamic demands
                             </p>
                         </div>
                     </div>
@@ -72,10 +244,9 @@ const AIPage = () => (
                                     <i className="fas fa-eye" style={{ fontSize: '3rem', color: '#ff6b6b' }}></i>
                                 </div>
                             </div>
-                            <h4 className="text-white mb-3">Predictive Analytics</h4>
+                            <h4 className="text-white mb-3">Faster time to Market.</h4>
                             <p style={{ color: '#cccccc' }}>
-                                Make data-driven decisions with AI-powered insights. Predict market trends, 
-                                customer behavior, and potential issues before they become problems.
+                                AI based prototyping enhances product development acceleration and deployments.
                             </p>
                         </div>
                     </div>
@@ -87,10 +258,9 @@ const AIPage = () => (
                                     <i className="fas fa-robot" style={{ fontSize: '3rem', color: '#4ecdc4' }}></i>
                                 </div>
                             </div>
-                            <h4 className="text-white mb-3">24/7 Customer Support</h4>
+                            <h4 className="text-white mb-3">Cost Optimization</h4>
                             <p style={{ color: '#cccccc' }}>
-                                AI chatbots and virtual assistants provide instant customer support around the clock, 
-                                improving satisfaction while reducing operational costs.
+                                The AI automation is less costly and highly efficient.
                             </p>
                         </div>
                     </div>
@@ -102,10 +272,9 @@ const AIPage = () => (
                                     <i className="fas fa-shield-alt" style={{ fontSize: '3rem', color: '#a8e6cf' }}></i>
                                 </div>
                             </div>
-                            <h4 className="text-white mb-3">Enhanced Security</h4>
+                            <h4 className="text-white mb-3">Bridging the Innovation Gap</h4>
                             <p style={{ color: '#cccccc' }}>
-                                AI-powered security systems detect threats in real-time, protecting your business 
-                                from cyber attacks and fraud with advanced pattern recognition.
+                                The AI-based intelligence is a step forward in the performance of the classical engineering paradigms.
                             </p>
                         </div>
                     </div>
@@ -117,10 +286,9 @@ const AIPage = () => (
                                     <i className="fas fa-users" style={{ fontSize: '3rem', color: '#ff9ff3' }}></i>
                                 </div>
                             </div>
-                            <h4 className="text-white mb-3">Personalized Experiences</h4>
+                            <h4 className="text-white mb-3">Quality Assurance</h4>
                             <p style={{ color: '#cccccc' }}>
-                                Deliver personalized customer experiences at scale. AI analyzes user behavior 
-                                to provide tailored recommendations and content.
+                                Continuous learning models improve accuracy and system reliability.
                             </p>
                         </div>
                     </div>
@@ -132,10 +300,9 @@ const AIPage = () => (
                                     <i className="fas fa-dollar-sign" style={{ fontSize: '3rem', color: '#ffd93d' }}></i>
                                 </div>
                             </div>
-                            <h4 className="text-white mb-3">Cost Reduction</h4>
+                            <h4 className="text-white mb-3">Personalization</h4>
                             <p style={{ color: '#cccccc' }}>
-                                Reduce operational costs by up to 30% through intelligent automation, 
-                                optimized resource allocation, and streamlined processes.
+                                AI, in turn, converts data into smooth interactive experiences to enhance interactions.
                             </p>
                         </div>
                     </div>
@@ -144,233 +311,325 @@ const AIPage = () => (
         </section>
 
         {/* AI Solutions We Offer */}
-        <section className="py-5">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-4">AI Solutions We Deliver</h2>
-                    <p className="lead" style={{ color: '#cccccc' }}>
-                        From concept to deployment, we build AI solutions that drive real business value
-                    </p>
-                </div>
-
-                <div className="row g-4">
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-comments" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">AI Chatbots & Virtual Assistants</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Intelligent conversational AI that handles customer queries, bookings, and support.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Explore Chatbot Solutions
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-search" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Computer Vision & Image Recognition</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Advanced image processing for quality control, object detection, and visual analysis.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    See Vision AI Demos
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-brain" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Machine Learning Models</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Custom ML models for prediction, classification, and pattern recognition.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Build Custom ML Models
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-chart-bar" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Predictive Analytics</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Data-driven insights and forecasting to make informed business decisions.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Get Analytics Dashboard
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-language" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Natural Language Processing</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Text analysis, sentiment analysis, and language understanding capabilities.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Explore NLP Solutions
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-cogs" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Process Automation</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Intelligent automation for workflows, document processing, and operations.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Automate Your Processes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-microphone" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Speech Recognition & Voice AI</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Voice-activated systems and speech-to-text applications for accessibility.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Build Voice Applications
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div className="ai-solution-card h-100 border border-primary p-4" 
-                             style={{ backgroundColor: '#1a1a3a', borderRadius: '15px' }}>
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <i className="fas fa-star" style={{ fontSize: '3rem', color: '#ffc107' }}></i>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Recommendation Systems</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Personalized recommendation engines to boost engagement and sales.
-                                </p>
-                                <button className="btn btn-primary w-100" style={{ borderRadius: '10px' }}>
-                                    Create Recommendation Engine
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Industries We Serve */}
-        <section className="py-5" style={{ backgroundColor: '#1a1a3a' }}>
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-4">Industries We Transform with AI</h2>
-                    <p className="lead" style={{ color: '#cccccc' }}>
-                        AI solutions tailored for specific industry needs and challenges
-                    </p>
-                </div>
-                
-                <div className="row g-4">
-                    <div className="col-lg-3 col-md-6">
-                        <div className="industry-card text-center p-4" style={{ backgroundColor: '#060615', borderRadius: '15px' }}>
-                            <i className="fas fa-heartbeat" style={{ fontSize: '3rem', color: '#ff6b6b', marginBottom: '1rem' }}></i>
-                            <h5 className="text-white mb-2">Healthcare</h5>
-                            <p style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                Medical imaging, diagnosis assistance, patient management
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div className="col-lg-3 col-md-6">
-                        <div className="industry-card text-center p-4" style={{ backgroundColor: '#060615', borderRadius: '15px' }}>
-                            <i className="fas fa-shopping-cart" style={{ fontSize: '3rem', color: '#4ecdc4', marginBottom: '1rem' }}></i>
-                            <h5 className="text-white mb-2">E-commerce</h5>
-                            <p style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                Product recommendations, demand forecasting, fraud detection
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div className="col-lg-3 col-md-6">
-                        <div className="industry-card text-center p-4" style={{ backgroundColor: '#060615', borderRadius: '15px' }}>
-                            <i className="fas fa-university" style={{ fontSize: '3rem', color: '#ffd93d', marginBottom: '1rem' }}></i>
-                            <h5 className="text-white mb-2">Finance</h5>
-                            <p style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                Risk assessment, algorithmic trading, compliance monitoring
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div className="col-lg-3 col-md-6">
-                        <div className="industry-card text-center p-4" style={{ backgroundColor: '#060615', borderRadius: '15px' }}>
-                            <i className="fas fa-graduation-cap" style={{ fontSize: '3rem', color: '#a8e6cf', marginBottom: '1rem' }}></i>
-                            <h5 className="text-white mb-2">Education</h5>
-                            <p style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                Personalized learning, student assessment, content creation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* CTA Section */}
+        {/* Add this section to your AIPage.jsx */}
         <section className="py-5" style={{ backgroundColor: '#060615' }}>
             <div className="container">
-                <div className="text-center">
-                    <h2 className="display-6 fw-bold mb-4">Ready to Embrace the AI Revolution?</h2>
-                    <p className="lead mb-4" style={{ color: '#cccccc' }}>
-                        Don't let your competitors get ahead. Start your AI transformation today 
-                        and unlock unprecedented growth opportunities.
+                <div className="mb-5">
+                    <h2 className="display-5 fw-bold mb-3" style={{ color: '#ffffff' }}>
+                        Our AI-First Approach
+                    </h2>
+                    <p style={{ color: '#cccccc', fontSize: '1.1rem' }}>
+                        An AI-assisted strategic product development model that is intelligent, scalable, and future-ready.
                     </p>
-                    <div className="d-flex gap-3 justify-content-center">
-                        <button className="btn btn-primary btn-lg px-5">Start AI Project</button>
-                        <button className="btn btn-outline-light btn-lg px-5">Book AI Consultation</button>
+                </div>
+
+                <div className="row g-4">
+                    {/* Step 1 - Discover & Define */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="approach-card h-100 p-4"
+                            style={{
+                                background: 'linear-gradient(135deg, #2a2a4a 0%, #1a1a3a 100%)',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            {/* Arrow Icon */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '20px',
+                                right: '20px',
+                                color: '#64B5F6',
+                                fontSize: '2rem',
+                                fontWeight: 'bold'
+                            }}>
+                                »
+                            </div>
+
+                            {/* Icon */}
+                            <div className="mb-4">
+                                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="45" fill="#ffc107" opacity="0.1" />
+                                    {/* Person icon */}
+                                    <circle cx="50" cy="35" r="12" fill="#ffc107" />
+                                    <path d="M35 70 Q35 55 50 55 Q65 55 65 70 L65 75 L35 75 Z" fill="#ffc107" />
+                                    {/* Lasso/rope */}
+                                    <ellipse cx="60" cy="25" rx="15" ry="8" fill="none" stroke="#ffc107" strokeWidth="2" />
+                                </svg>
+                            </div>
+
+                            {/* Step Label */}
+                            <div className="mb-3" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                Step 1
+                            </div>
+
+                            {/* Title */}
+                            <h4 className="mb-3" style={{
+                                color: '#ffffff',
+                                fontSize: '1.4rem',
+                                fontWeight: '600'
+                            }}>
+                                Discover & Define
+                            </h4>
+
+                            {/* Description */}
+                            <p style={{
+                                color: '#cccccc',
+                                fontSize: '0.95rem',
+                                lineHeight: '1.6',
+                                marginBottom: 0
+                            }}>
+                                Intelligent product decisions are informed by AI-based research and analytics.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Step 2 - Build & Optimize */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="approach-card h-100 p-4"
+                            style={{
+                                background: 'linear-gradient(135deg, #2a2a4a 0%, #1a1a3a 100%)',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            {/* Arrow Icon */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '20px',
+                                right: '20px',
+                                color: '#64B5F6',
+                                fontSize: '2rem',
+                                fontWeight: 'bold'
+                            }}>
+                                »
+                            </div>
+
+                            {/* Icon */}
+                            <div className="mb-4">
+                                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="45" fill="#ffc107" opacity="0.1" />
+                                    {/* Hand with AI chip */}
+                                    <path d="M30 60 Q30 50 40 50 L45 50 L45 35 Q45 30 50 30 Q55 30 55 35 L55 50 L60 50 Q70 50 70 60 L70 75 Q70 80 65 80 L35 80 Q30 80 30 75 Z" fill="#ffc107" />
+                                    {/* AI chip symbol */}
+                                    <rect x="43" y="55" width="14" height="14" rx="2" fill="#1a1a3a" />
+                                    <text x="50" y="66" fontSize="10" fill="#ffc107" textAnchor="middle" fontWeight="bold">AI</text>
+                                </svg>
+                            </div>
+
+                            {/* Step Label */}
+                            <div className="mb-3" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                Step 2
+                            </div>
+
+                            {/* Title */}
+                            <h4 className="mb-3" style={{
+                                color: '#ffffff',
+                                fontSize: '1.4rem',
+                                fontWeight: '600'
+                            }}>
+                                Build & Optimize
+                            </h4>
+
+                            {/* Description */}
+                            <p style={{
+                                color: '#cccccc',
+                                fontSize: '0.95rem',
+                                lineHeight: '1.6',
+                                marginBottom: 0
+                            }}>
+                                Scalable AI models and automation will guarantee an efficient development.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Step 3 - Deliver & Scale */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="approach-card h-100 p-4"
+                            style={{
+                                background: 'linear-gradient(135deg, #2a2a4a 0%, #1a1a3a 100%)',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            {/* Arrow Icon */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '20px',
+                                right: '20px',
+                                color: '#64B5F6',
+                                fontSize: '2rem',
+                                fontWeight: 'bold'
+                            }}>
+                                »
+                            </div>
+
+                            {/* Icon */}
+                            <div className="mb-4">
+                                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="45" fill="#ffc107" opacity="0.1" />
+                                    {/* Hand holding box */}
+                                    <path d="M30 50 Q30 45 35 45 L40 45 L40 35 Q40 32 43 32 Q46 32 46 35 L46 45 L50 45 L50 35 Q50 32 53 32 Q56 32 56 35 L56 45 L60 45 Q65 45 65 50 L65 70 Q65 75 60 75 L35 75 Q30 75 30 70 Z" fill="#ffc107" />
+                                    {/* Shopping bag/box on hand */}
+                                    <rect x="38" y="52" width="24" height="18" rx="2" fill="#1a1a3a" />
+                                    <path d="M45 52 L45 48 Q45 46 47 46 L53 46 Q55 46 55 48 L55 52" stroke="#ffc107" strokeWidth="2" fill="none" />
+                                </svg>
+                            </div>
+
+                            {/* Step Label */}
+                            <div className="mb-3" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                Step 3
+                            </div>
+
+                            {/* Title */}
+                            <h4 className="mb-3" style={{
+                                color: '#ffffff',
+                                fontSize: '1.4rem',
+                                fontWeight: '600'
+                            }}>
+                                Deliver & Scale
+                            </h4>
+
+                            {/* Description */}
+                            <p style={{
+                                color: '#cccccc',
+                                fontSize: '0.95rem',
+                                lineHeight: '1.6',
+                                marginBottom: 0
+                            }}>
+                                Agile iterations and AI testing promote a smooth development.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Step 4 - Evolve & Innovate */}
+                    <div className="col-lg-3 col-md-6">
+                        <div
+                            className="approach-card h-100 p-4"
+                            style={{
+                                background: 'linear-gradient(135deg, #2a2a4a 0%, #1a1a3a 100%)',
+                                borderRadius: '20px',
+                                border: '2px solid rgba(102, 126, 234, 0.3)',
+                                position: 'relative',
+                                overflow: 'hidden',
+                                transition: 'all 0.3s ease',
+                                cursor: 'pointer'
+                            }}
+                            onMouseEnter={(e) => {
+                                e.currentTarget.style.transform = 'translateY(-10px)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.8)';
+                                e.currentTarget.style.boxShadow = '0 20px 40px rgba(102, 126, 234, 0.3)';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.currentTarget.style.transform = 'translateY(0)';
+                                e.currentTarget.style.borderColor = 'rgba(102, 126, 234, 0.3)';
+                                e.currentTarget.style.boxShadow = 'none';
+                            }}
+                        >
+                            {/* Arrow Icon */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '20px',
+                                right: '20px',
+                                color: '#64B5F6',
+                                fontSize: '2rem',
+                                fontWeight: 'bold'
+                            }}>
+                                »
+                            </div>
+
+                            {/* Icon */}
+                            <div className="mb-4">
+                                <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+                                    <circle cx="50" cy="50" r="45" fill="#ffc107" opacity="0.1" />
+                                    {/* Lightbulb with gears */}
+                                    <ellipse cx="50" cy="55" rx="18" ry="20" fill="#ffc107" />
+                                    <rect x="45" y="72" width="10" height="6" fill="#ffc107" />
+                                    <rect x="43" y="78" width="14" height="3" fill="#ffc107" />
+                                    {/* Bulb filament */}
+                                    <path d="M50 45 L50 35 M45 40 L55 40" stroke="#1a1a3a" strokeWidth="2" />
+                                    {/* Gear symbols */}
+                                    <circle cx="60" cy="35" r="6" fill="#ffc107" />
+                                    <circle cx="60" cy="35" r="3" fill="#1a1a3a" />
+                                    <circle cx="40" cy="38" r="5" fill="#ffc107" />
+                                    <circle cx="40" cy="38" r="2.5" fill="#1a1a3a" />
+                                </svg>
+                            </div>
+
+                            {/* Step Label */}
+                            <div className="mb-3" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
+                                Step 4
+                            </div>
+
+                            {/* Title */}
+                            <h4 className="mb-3" style={{
+                                color: '#ffffff',
+                                fontSize: '1.4rem',
+                                fontWeight: '600'
+                            }}>
+                                Evolve & Innovate
+                            </h4>
+
+                            {/* Description */}
+                            <p style={{
+                                color: '#cccccc',
+                                fontSize: '0.95rem',
+                                lineHeight: '1.6',
+                                marginBottom: 0
+                            }}>
+                                Constant AI upgrades ensure that your product is in the future.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <SolutionsCarousel />
     </div>
 );
 

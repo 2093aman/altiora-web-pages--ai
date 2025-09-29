@@ -54,7 +54,7 @@ const Web2Page = () => (
 
                 {/* Row 1 */}
                 <div className="row g-4 mb-4">
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 align-items-center">
                         <div
                             className="card h-100 border border-primary p-4 delivery-card"
                             style={{
@@ -171,8 +171,8 @@ const Web2Page = () => (
                 </div>
 
                 {/* Row 2 */}
-                <div className="row g-4 mb-5">
-                    <div className="col-lg-3 col-md-6">
+                <div className="row g-4 mb-5 justify-content-center">
+                    <div className="col-lg-3 col-md-6 align-items-center">
                         <div
                             className="card h-100 border border-primary p-4 delivery-card"
                             style={{
@@ -228,8 +228,6 @@ const Web2Page = () => (
                         </div>
                     </div>
                 </div>
-
-                {/* CTA Button */}
                 <div className="text-center">
                     <button
                         className="btn btn-primary btn-lg px-5 py-3"
