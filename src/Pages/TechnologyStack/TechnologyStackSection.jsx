@@ -252,7 +252,7 @@ const TechnologyStackSection = () => {
                     name: "Render", 
                     icon: "fas fa-cube", 
                     color: "#46E3B7", 
-                    logo: "https://render.com/favicon.ico"
+                    logo: "https://icons.duckduckgo.com/ip3/render.com.ico"
                 },
                 { 
                     name: "Netlify", 
@@ -295,7 +295,7 @@ const TechnologyStackSection = () => {
                     name: "Clerk", 
                     icon: "fas fa-user-shield", 
                     color: "#6366F1", 
-                    logo: "https://clerk.com/favicon.ico"
+                    logo: "https://icons.duckduckgo.com/ip3/clerk.com.ico"
                 },
                 { 
                     name: "Auth0", 
