@@ -27,10 +27,11 @@ const Web2Page = () => (
                             <span className="text-primary display-6">From MVP to enterprise — scalable solutions in 4–8 weeks</span>
                         </h1>
                         <p className="lead mb-4" style={{ color: '#cccccc' }}>
-                            Website & App Development that Elevates Experiences
                             We design and develop high-quality, performance-driven products that do more than just look good. Our focus is on building solutions that drive conversions,
-                            remove friction across every customer touchpoint, and deliver seamless experiences. 
-                            Each product is crafted to align with your business objectives and is built with scalability in mind—ensuring it grows in step with your vision, operations, and long-term goals.                        </p>
+                            remove friction across every customer touchpoint, and deliver seamless experiences.
+                            Each product is crafted to align with your business
+                            objectives and is built with scalability in mind—ensuring it grows in step with your vision, operations, and long-term goals.
+                        </p>
                         <div className="d-flex gap-3">
                             <button className="btn btn-warning btn-lg px-4">Start Your Web Project</button>
                             <button className="btn btn-outline-light btn-lg px-4">View Portfolio</button>
@@ -44,10 +45,10 @@ const Web2Page = () => (
         <section className="py-5">
             <div className="container">
                 <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-4">What We Deliver</h2>
+                    <h2 className="display-5 fw-bold mb-4">End-to-End Software Development</h2>
                     <p className="lead" style={{ color: '#cccccc', maxWidth: '900px', margin: '0 auto' }}>
-                        From simple landing pages to complex web applications, we deliver solutions that are fast, secure, and scalable.
-                        Our development process ensures quality code, responsive design, and optimal performance across all devices.
+                        Our products are built to deliver results—crafted for quality, 
+                        optimized for performance, seamless at every touchpoint, and designed to scale with your ambitions.
                     </p>
                 </div>
 
@@ -72,16 +73,11 @@ const Web2Page = () => (
                                         <circle cx="36" cy="26" r="3" fill="#ffc107" />
                                     </svg>
                                 </div>
-                                <h4 className="card-title text-white mb-3">Responsive Web Design</h4>
+                                <h4 className="card-title text-white mb-3">Custom Software Development</h4>
                                 <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Mobile-first designs that look stunning on all devices with optimized user experience.
+                                    We develop one-of-a-kind software in harmony with the way you work, joining seamlessly, growing securely, 
+                                    and delivering tangible efficiencies, velocity, and ROI across web, mobile, and enterprise infrastructure.
                                 </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Get a design mockup this week
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -106,16 +102,11 @@ const Web2Page = () => (
                                         <path d="M18 14H30L28 18H20L18 14Z" fill="#ffc107" />
                                     </svg>
                                 </div>
-                                <h4 className="card-title text-white mb-3">E-Commerce Solutions</h4>
+                                <h4 className="card-title text-white mb-3">SaaS Application Development</h4>
                                 <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Full-featured online stores with payment integration, inventory management, and analytics.
+                                    SaaS application development that turns ideas into scalable, secure, multi-tenant products—rapid prototyping, 
+                                    cloud-native architecture, seamless integrations, analytics, and ongoing optimization for reliable growth and enterprise readiness.
                                 </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    See e-commerce demo and pricing
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -139,16 +130,11 @@ const Web2Page = () => (
                                         <circle cx="38" cy="20" r="2" fill="#ffc107" />
                                     </svg>
                                 </div>
-                                <h4 className="card-title text-white mb-3">Content Management Systems</h4>
+                                <h4 className="card-title text-white mb-3">Healthcare Software Development</h4>
                                 <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Custom CMS solutions that make content updates simple and efficient for your team.
+                                    We build secure, HIPAA ready healthcare software including EHRs, patient portals, telemedicine and analytics, 
+                                    integrated with workflows and devices to improve outcomes, compliance and operational efficiency for providers and payers.
                                 </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Explore CMS features and setup
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -173,16 +159,12 @@ const Web2Page = () => (
                                         <path d="M18 14H30L28 18H20L18 14Z" fill="#ffc107" />
                                     </svg>
                                 </div>
-                                <h4 className="card-title text-white mb-3">Web Applications</h4>
+                                <h4 className="card-title text-white mb-3">On Demand Software Development</h4>
                                 <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Complex web apps with real-time features, dashboards, and integrations.
+                                    We develop tailored on-demand software that empowers businesses to serve customers anytime, anywhere. 
+                                    From ride-hailing and food delivery to healthcare, logistics, and e-commerce, our solutions are built with scalable architecture, 
+                                    intuitive interfaces, and real-time features that ensure seamless experiences and measurable growth.
                                 </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Discuss your web app requirements
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -208,16 +190,11 @@ const Web2Page = () => (
                                         <circle cx="24" cy="24" r="4" fill="#1a1a3a" />
                                     </svg>
                                 </div>
-                                <h4 className="card-title text-white mb-3">API Development & Integration</h4>
+                                <h4 className="card-title text-white mb-3">Fintech Software Development</h4>
                                 <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    RESTful APIs and third-party integrations to connect your systems seamlessly.
+                                    Build secure, compliant fintech platforms—payments, lending, KYC/AML, risk engines, dashboards—with scalable architectures, 
+                                    bank-grade integrations, and real-time analytics to streamline operations, boost conversions, and accelerate regulatory-ready growth.
                                 </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Review API architecture options
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -242,83 +219,11 @@ const Web2Page = () => (
                                         <path d="M14 12H34V16H14V12Z" fill="#ffc107" />
                                     </svg>
                                 </div>
-                                <h4 className="card-title text-white mb-3">Performance Optimization</h4>
+                                <h4 className="card-title text-white mb-3">Enterprise Software Development</h4>
                                 <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Speed optimization, SEO enhancements, and performance monitoring for better rankings.
+                                    Enterprise software development delivering secure, scalable systems tailored to complex workflows, integrating legacy and cloud platforms, 
+                                    automating operations, improving data visibility, and accelerating growth with maintainable code and measurable ROI.
                                 </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Get a performance audit report
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div
-                            className="card h-100 border border-primary p-4 delivery-card"
-                            style={{
-                                backgroundColor: '#1a1a3a',
-                                borderRadius: '15px',
-                                transition: 'all 0.3s ease',
-                                cursor: 'pointer'
-                            }}
-                        >
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <circle cx="24" cy="24" r="18" fill="#ffc107" opacity="0.2" />
-                                        <path d="M18 20L30 20L28 16L20 16L18 20Z" fill="#ffc107" />
-                                        <rect x="20" y="24" width="8" height="8" rx="2" fill="#ffc107" />
-                                        <circle cx="16" cy="32" r="2" fill="#ffc107" />
-                                        <circle cx="32" cy="32" r="2" fill="#ffc107" />
-                                    </svg>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Cloud Hosting & DevOps</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Scalable cloud infrastructure, CI/CD pipelines, and automated deployment solutions.
-                                </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Plan your cloud infrastructure
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6">
-                        <div
-                            className="card h-100 border border-primary p-4 delivery-card"
-                            style={{
-                                backgroundColor: '#1a1a3a',
-                                borderRadius: '15px',
-                                transition: 'all 0.3s ease',
-                                cursor: 'pointer'
-                            }}
-                        >
-                            <div className="card-body text-center">
-                                <div className="mb-4">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                                        <rect x="8" y="8" width="32" height="32" rx="6" fill="#ffc107" opacity="0.2" />
-                                        <path d="M16 16L32 16L30 20L18 20L16 16Z" fill="#ffc107" />
-                                        <rect x="20" y="24" width="8" height="8" rx="4" fill="#ffc107" />
-                                        <circle cx="24" cy="34" r="2" fill="#ffc107" />
-                                    </svg>
-                                </div>
-                                <h4 className="card-title text-white mb-3">Maintenance & Support</h4>
-                                <p className="card-text mb-4" style={{ color: '#cccccc', fontSize: '0.9rem' }}>
-                                    Ongoing support, security updates, and feature enhancements to keep your site running smoothly.
-                                </p>
-                                <button
-                                    className="btn btn-primary w-100"
-                                    style={{ borderRadius: '10px' }}
-                                >
-                                    Explore support packages
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -340,9 +245,11 @@ const Web2Page = () => (
         <section className="py-5">
             <div className="container">
                 <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-3">Our Web Development Services</h2>
+                    <h2 className="display-5 fw-bold mb-3">Website and Web App Development</h2>
                     <p className="lead" style={{ color: '#cccccc' }}>
-                        Comprehensive web solutions from frontend to backend development
+                        We create websites and web applications that go beyond design—engineered for speed, security, and scalability. 
+                        Every product is built to deliver measurable results, crafted with precision, 
+                        optimized for performance, and seamless across every touchpoint to grow with your business.
                     </p>
                 </div>
                 <div className="row g-4">
@@ -369,9 +276,11 @@ const Web2Page = () => (
                                     </svg>
                                 </div>
                             </div>
-                            <h4 className="service-title text-white mb-3">Frontend Development</h4>
+                            <h4 className="service-title text-white mb-3">Custom Website Development</h4>
                             <p className="service-description" style={{ color: '#cccccc' }}>
-                                Modern React, Vue.js, and Angular applications with responsive design and optimal performance.
+                                We build tailored websites designed around your business goals. From sleek corporate sites to complex platforms, 
+                                our team delivers fast, secure, and scalable solutions with clean code, modern UI/UX, 
+                                and full responsiveness across devices. Every project is crafted to reflect your brand and drive measurable results.
                             </p>
                             <div className="service-hover-overlay"></div>
                         </div>
@@ -398,9 +307,11 @@ const Web2Page = () => (
                                     </svg>
                                 </div>
                             </div>
-                            <h4 className="service-title text-white mb-3">Backend Development</h4>
+                            <h4 className="service-title text-white mb-3">Corporate & Business Websites</h4>
                             <p className="service-description" style={{ color: '#cccccc' }}>
-                                Robust server-side solutions with Node.js, Python, PHP, and database management systems.
+                                We design and develop modern, high-performance corporate websites that showcase your brand, services, 
+                                and expertise with clarity. Our focus is on creating user-friendly designs, 
+                                responsive layouts, and lead-driven structures that build trust and convert visitors into clients.
                             </p>
                             <div className="service-hover-overlay"></div>
                         </div>
@@ -427,9 +338,11 @@ const Web2Page = () => (
                                     </svg>
                                 </div>
                             </div>
-                            <h4 className="service-title text-white mb-3">E-Commerce Development</h4>
+                            <h4 className="service-title text-white mb-3">E-Commerce Websites</h4>
                             <p className="service-description" style={{ color: '#cccccc' }}>
-                                Complete online store solutions with payment gateways, inventory management, and analytics.
+                                We build scalable, high-performance online stores designed to enhance user experience. 
+                                From product catalogs and secure payment gateways to personalized shopping journeys, our solutions ensure smooth navigation,
+                                fast load speeds, and mobile-first design—helping brands maximize conversions and grow revenue.
                             </p>
                             <div className="service-hover-overlay"></div>
                         </div>
@@ -458,9 +371,11 @@ const Web2Page = () => (
                                     </svg>
                                 </div>
                             </div>
-                            <h4 className="service-title text-white mb-3">Mobile-First Design</h4>
+                            <h4 className="service-title text-white mb-3">News & Blog Websites</h4>
                             <p className="service-description" style={{ color: '#cccccc' }}>
                                 Responsive designs that work perfectly on all devices with mobile-first approach.
+                                We design and develop dynamic news and blog websites that are fast, secure, and easy to manage. With a powerful CMS, SEO-friendly structure, and modern layouts, we help you publish,
+                                organize, and share content seamlessly while engaging your readers with a smooth browsing experience.
                             </p>
                             <div className="service-hover-overlay"></div>
                         </div>
@@ -489,9 +404,11 @@ const Web2Page = () => (
                                     </svg>
                                 </div>
                             </div>
-                            <h4 className="service-title text-white mb-3">API Integration</h4>
+                            <h4 className="service-title text-white mb-3">Learning Management Web App Systems</h4>
                             <p className="service-description" style={{ color: '#cccccc' }}>
-                                Seamless integration with third-party services and custom API development for your applications.
+                                We build scalable LMS platforms with course creation, 
+                                student dashboards, progress tracking, quizzes, certifications, 
+                                and payments—making online learning simple, efficient, and engaging.
                             </p>
                             <div className="service-hover-overlay"></div>
                         </div>
@@ -518,9 +435,11 @@ const Web2Page = () => (
                                     </svg>
                                 </div>
                             </div>
-                            <h4 className="service-title text-white mb-3">Performance Optimization</h4>
+                            <h4 className="service-title text-white mb-3">Booking & Reservation Web App Systems</h4>
                             <p className="service-description" style={{ color: '#cccccc' }}>
-                                Speed optimization, SEO improvements, and performance monitoring for better user experience.
+                                We build seamless booking platforms tailored for hotels, salons, healthcare, events, and more. 
+                                Our systems feature real-time availability, secure payments, automated confirmations, 
+                                and user-friendly dashboards—designed to boost efficiency, reduce no-shows, and deliver a smooth customer experience.
                             </p>
                             <div className="service-hover-overlay"></div>
                         </div>
@@ -668,86 +587,6 @@ const Web2Page = () => (
 
                             {/* Background Animation */}
                             <div className="how-we-background-animation"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {/* Technology Stack Section */}
-        <section className="py-5">
-            <div className="container">
-                <div className="text-center mb-5">
-                    <h2 className="display-5 fw-bold mb-4">Our Technology Stack</h2>
-                    <p className="lead" style={{ color: '#cccccc' }}>
-                        We use cutting-edge technologies to build fast, secure, and scalable web applications
-                    </p>
-                </div>
-
-                <div className="row g-4">
-                    {/* Frontend Technologies */}
-                    <div className="col-lg-4 col-md-6">
-                        <div className="tech-card h-100 p-4 text-center" style={{ backgroundColor: '#1a1a3a', borderRadius: '15px', border: '2px solid transparent' }}>
-                            <div className="mb-4">
-                                <i className="fab fa-react text-info" style={{ fontSize: '3rem' }}></i>
-                            </div>
-                            <h4 className="text-white mb-3">Frontend</h4>
-                            <p style={{ color: '#cccccc' }}>React, Vue.js, Angular, TypeScript, HTML5, CSS3, SASS</p>
-                        </div>
-                    </div>
-
-                    {/* Backend Technologies */}
-                    <div className="col-lg-4 col-md-6">
-                        <div className="tech-card h-100 p-4 text-center" style={{ backgroundColor: '#1a1a3a', borderRadius: '15px', border: '2px solid transparent' }}>
-                            <div className="mb-4">
-                                <i className="fab fa-node-js text-success" style={{ fontSize: '3rem' }}></i>
-                            </div>
-                            <h4 className="text-white mb-3">Backend</h4>
-                            <p style={{ color: '#cccccc' }}>Node.js, Python, PHP, Java, .NET, Express.js</p>
-                        </div>
-                    </div>
-
-                    {/* Database Technologies */}
-                    <div className="col-lg-4 col-md-6">
-                        <div className="tech-card h-100 p-4 text-center" style={{ backgroundColor: '#1a1a3a', borderRadius: '15px', border: '2px solid transparent' }}>
-                            <div className="mb-4">
-                                <i className="fas fa-database text-warning" style={{ fontSize: '3rem' }}></i>
-                            </div>
-                            <h4 className="text-white mb-3">Database</h4>
-                            <p style={{ color: '#cccccc' }}>MySQL, PostgreSQL, MongoDB, Redis, Firebase</p>
-                        </div>
-                    </div>
-
-                    {/* Cloud & DevOps */}
-                    <div className="col-lg-4 col-md-6">
-                        <div className="tech-card h-100 p-4 text-center" style={{ backgroundColor: '#1a1a3a', borderRadius: '15px', border: '2px solid transparent' }}>
-                            <div className="mb-4">
-                                <i className="fab fa-aws text-primary" style={{ fontSize: '3rem' }}></i>
-                            </div>
-                            <h4 className="text-white mb-3">Cloud & DevOps</h4>
-                            <p style={{ color: '#cccccc' }}>AWS, Azure, Google Cloud, Docker, Kubernetes</p>
-                        </div>
-                    </div>
-
-                    {/* Mobile Technologies */}
-                    <div className="col-lg-4 col-md-6">
-                        <div className="tech-card h-100 p-4 text-center" style={{ backgroundColor: '#1a1a3a', borderRadius: '15px', border: '2px solid transparent' }}>
-                            <div className="mb-4">
-                                <i className="fas fa-mobile-alt text-info" style={{ fontSize: '3rem' }}></i>
-                            </div>
-                            <h4 className="text-white mb-3">Mobile</h4>
-                            <p style={{ color: '#cccccc' }}>React Native, Flutter, Progressive Web Apps</p>
-                        </div>
-                    </div>
-
-                    {/* Tools & Frameworks */}
-                    <div className="col-lg-4 col-md-6">
-                        <div className="tech-card h-100 p-4 text-center" style={{ backgroundColor: '#1a1a3a', borderRadius: '15px', border: '2px solid transparent' }}>
-                            <div className="mb-4">
-                                <i className="fas fa-tools text-warning" style={{ fontSize: '3rem' }}></i>
-                            </div>
-                            <h4 className="text-white mb-3">Tools</h4>
-                            <p style={{ color: '#cccccc' }}>Git, Webpack, CI/CD, Jest, Cypress, Figma</p>
                         </div>
                     </div>
                 </div>
