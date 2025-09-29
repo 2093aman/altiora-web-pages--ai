@@ -4,6 +4,7 @@ import Web3Page from './Pages/Web3/Web3.jsx';
 import Web2Page from './Pages/Web2/Web2.jsx';
 import AIPage from './Pages/AI/AIPage.jsx';
 import Navbar from './Components/Navbar.jsx';
+import Chatbot from './Components/Chatbot.jsx';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
@@ -27,6 +28,7 @@ const App = () => {
     <div>
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
+      <Chatbot />
     </div>
   );
 };
