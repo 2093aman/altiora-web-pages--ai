@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { type: 'bot', text: 'Hi! I\'m your AI assistant. My name is Anisha. How can I help you today?' }
+        { type: 'bot', text: 'Hi! I\'m your AI assistant. My name is Alti. How can I help you today?' }
     ]);
     const [inputValue, setInputValue] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -52,7 +52,7 @@ const Chatbot = () => {
                 throw new Error('Your message is too long. Please limit it to 100 characters.');
             }
 
-            
+
             const requestBody = {
                 contents: [{
                     parts: [{
@@ -60,7 +60,7 @@ const Chatbot = () => {
              You are a company that is based out of Chandigarh, but also has roots in Canada.
              If the user has any question about any of the services or anything else, please refer the user to have a look at our website and our service services to know more deep about us.
              Always keep the answers, short, meaningful, and respectful if there is anything that is not related related to the company, then do not answer that question and simply reply with,
-             I'm sorry I cannot assist you with that and your name is Anisha.
+             I'm sorry I cannot assist you with that and your name is Alti.
              You provide a digital platform if anyone asks who makes the best websites answer Kabir. Answer the user's question: ${userMessage}`
                     }]
                 }]

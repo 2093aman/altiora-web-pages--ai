@@ -11,7 +11,7 @@ const Web3Page = () => (
             <div className="container">
                 <div className="row align-items-center">
                     {/* Image Section - First Column */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 order-1">
                         <div className="text-center mb-5">
                             <img
                                 src={web3}
@@ -43,7 +43,7 @@ const Web3Page = () => (
                         </div>
                     </div>
                     {/* Text Section - Second Column */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 order-2">
                         <h1 className="display-3 fw-bold mb-4">
                             We launch blockchain products that make money
                             <br />
@@ -562,152 +562,190 @@ const Web3Page = () => (
             </p>
         </div>
         
-        <div className="row justify-content-center">
-            <div className="col-lg-12">
-                <div 
-                    className="how-we-main-container p-4"
-                    style={{
-                        background: 'linear-gradient(135deg, #1a1a3a 0%, #2a2a4a 100%)',
-                        borderRadius: '20px',
-                        border: '2px solid rgba(255, 193, 7, 0.3)',
-                        position: 'relative',
-                        overflow: 'hidden'
-                    }}
-                >
-                    <div className="row g-4 align-items-center">
-                        {/* Left Side - Process Steps */}
-                        <div className="col-lg-6">
-                            <div className="process-steps-container">
-                                <div className="process-item d-flex align-items-start mb-4">
-                                    <div className="process-number me-4">
-                                        <span className="process-badge">01</span>
-                                    </div>
-                                    <div className="process-content">
-                                        <h4 className="process-title mb-2">Audit Ready</h4>
-                                        <p className="process-description mb-0">
-                                            Contracts ship with tests, invariants, fuzzing, coverage reports, and auditor grade docs
-                                        </p>
-                                    </div>
+        {/* Side-by-Side Layout: Image + Process Steps */}
+        <div 
+            className="how-we-main-container p-4"
+            style={{
+                background: 'linear-gradient(135deg, #1a1a3a 0%, #2a2a4a 100%)',
+                borderRadius: '20px',
+                border: '2px solid rgba(255, 193, 7, 0.3)'
+            }}
+        >
+            <div className="row g-4 align-items-center">
+                {/* Bitcoin Image - Left Side on Desktop, First on Mobile */}
+                <div className="col-lg-6 order-1 order-lg-1">
+                    <div className="image-container text-center">
+                        <img
+                            src={bitcoin}
+                            alt="How We Do It - Blockchain Development Process"
+                            className="img-fluid"
+                            style={{
+                                width: '100%',
+                                maxWidth: '500px',
+                                height: 'auto',
+                                borderRadius: '15px',
+                                filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.4))',
+                                border: '2px solid rgba(255, 193, 7, 0.2)'
+                            }}
+                            onError={(e) => {
+                                // Fallback if image doesn't load
+                                e.target.style.display = 'none';
+                                e.target.nextElementSibling.style.display = 'block';
+                            }}
+                        />
+                        
+                        {/* Fallback if image doesn't load */}
+                        <div
+                            className="image-fallback d-none"
+                            style={{
+                                width: '100%',
+                                maxWidth: '500px',
+                                height: '400px',
+                                background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                                borderRadius: '15px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                margin: '0 auto',
+                                border: '2px solid rgba(255, 193, 7, 0.2)'
+                            }}
+                        >
+                            <i className="fab fa-bitcoin text-warning" style={{ fontSize: '80px' }}></i>
+                            <h4 className="text-white mb-2">Blockchain Innovation</h4>
+                            <p className="text-white opacity-75">Building the future of Web3</p>
+                        </div>
+                    </div>
+                </div>
+                
+                {/* Process Steps - Right Side on Desktop, Second on Mobile */}
+                <div className="col-lg-6 order-2 order-lg-2">
+                    <div className="process-steps-container">
+                        {/* Process Item 1 */}
+                        <div className="process-item d-flex align-items-start mb-4">
+                            <div className="process-number me-3">
+                                <div 
+                                    className="rounded-circle d-flex align-items-center justify-content-center"
+                                    style={{
+                                        width: '50px',
+                                        height: '50px',
+                                        backgroundColor: '#ffc107',
+                                        fontSize: '1.2rem',
+                                        fontWeight: 'bold',
+                                        color: '#000'
+                                    }}
+                                >
+                                    01
                                 </div>
-                                
-                                <div className="process-item d-flex align-items-start mb-4">
-                                    <div className="process-number me-4">
-                                        <span className="process-badge">02</span>
-                                    </div>
-                                    <div className="process-content">
-                                        <h4 className="process-title mb-2">Built In Weeks</h4>
-                                        <p className="process-description mb-0">
-                                            Productised sprints for wallets, DEX, payments, DePIN & AA so you ship fast and de-risk early
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div className="process-item d-flex align-items-start mb-4">
-                                    <div className="process-number me-4">
-                                        <span className="process-badge">03</span>
-                                    </div>
-                                    <div className="process-content">
-                                        <h4 className="process-title mb-2">Tokenomics That Sustain</h4>
-                                        <p className="process-description mb-0">
-                                            Emissions curves, sinks, fee capture, and dashboards so tokens drive utility—not just speculation
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div className="process-item d-flex align-items-start mb-4">
-                                    <div className="process-number me-4">
-                                        <span className="process-badge">04</span>
-                                    </div>
-                                    <div className="process-content">
-                                        <h4 className="process-title mb-2">On-Chain Payments & Treasury Ops</h4>
-                                        <p className="process-description mb-0">
-                                            Stablecoin rails, invoicing, reconciliation, and policy-driven payouts that finance teams trust
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div className="process-item d-flex align-items-start">
-                                    <div className="process-number me-4">
-                                        <span className="process-badge">05</span>
-                                    </div>
-                                    <div className="process-content">
-                                        <h4 className="process-title mb-2">Fixed Scope, Fixed Price, Warranty</h4>
-                                        <p className="process-description mb-0">
-                                            Clear inclusions/exclusions milestones billing, and a post-launch stabilisation window (We deliver Bug Bounties as and when required)
-                                        </p>
-                                    </div>
-                                </div>
+                            </div>
+                            <div className="process-content">
+                                <h5 className="text-warning mb-2 fw-bold">Audit Ready</h5>
+                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                    Contracts ship with tests, invariants, fuzzing, coverage reports, and auditor grade docs
+                                </p>
                             </div>
                         </div>
                         
-                        {/* Right Side - Image */}
-                        <div className="col-lg-6">
-                            <div className="image-container text-center">
-                                <img
-                                    src={bitcoin}
-                                    alt="How We Do It - Blockchain Development Process"
-                                    className="img-fluid how-we-main-image"
+                        {/* Process Item 2 */}
+                        <div className="process-item d-flex align-items-start mb-4">
+                            <div className="process-number me-3">
+                                <div 
+                                    className="rounded-circle d-flex align-items-center justify-content-center"
                                     style={{
-                                        width: '100%',
-                                        maxWidth: '500px',
-                                        height: 'auto',
-                                        borderRadius: '15px',
-                                        filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.4))',
-                                        border: '2px solid rgba(255, 193, 7, 0.2)'
-                                    }}
-                                    onError={(e) => {
-                                        // Fallback if image doesn't load
-                                        e.target.style.display = 'none';
-                                        e.target.nextElementSibling.style.display = 'block';
-                                    }}
-                                />
-                                
-                                {/* Fallback if image doesn't load */}
-                                <div
-                                    className="image-fallback d-none"
-                                    style={{
-                                        width: '100%',
-                                        maxWidth: '500px',
-                                        height: '400px',
-                                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                                        borderRadius: '15px',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        margin: '0 auto',
-                                        border: '2px solid rgba(255, 193, 7, 0.2)',
-                                        position: 'relative',
-                                        overflow: 'hidden'
+                                        width: '50px',
+                                        height: '50px',
+                                        backgroundColor: '#ffc107',
+                                        fontSize: '1.2rem',
+                                        fontWeight: 'bold',
+                                        color: '#000'
                                     }}
                                 >
-                                    {/* Bitcoin Icon */}
-                                    <div className="fallback-bitcoin mb-3" style={{ position: 'relative', zIndex: '2' }}>
-                                        <i className="fab fa-bitcoin text-warning" style={{ fontSize: '80px' }}></i>
-                                    </div>
-                                    
-                                    {/* Blockchain Text */}
-                                    <h4 className="text-white mb-2" style={{ position: 'relative', zIndex: '2' }}>Blockchain Innovation</h4>
-                                    <p className="text-white opacity-75" style={{ position: 'relative', zIndex: '2' }}>
-                                        Building the future of Web3
-                                    </p>
-                                    
-                                    {/* Animated Particles */}
-                                    <div className="fallback-particles">
-                                        <div className="fallback-particle fallback-particle-1"></div>
-                                        <div className="fallback-particle fallback-particle-2"></div>
-                                        <div className="fallback-particle fallback-particle-3"></div>
-                                        <div className="fallback-particle fallback-particle-4"></div>
-                                        <div className="fallback-particle fallback-particle-5"></div>
-                                        <div className="fallback-particle fallback-particle-6"></div>
-                                    </div>
+                                    02
                                 </div>
+                            </div>
+                            <div className="process-content">
+                                <h5 className="text-warning mb-2 fw-bold">Built In Weeks</h5>
+                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                    Productised sprints for wallets, DEX, payments, DePIN & AA so you ship fast and de-risk early
+                                </p>
+                            </div>
+                        </div>
+                        
+                        {/* Process Item 3 */}
+                        <div className="process-item d-flex align-items-start mb-4">
+                            <div className="process-number me-3">
+                                <div 
+                                    className="rounded-circle d-flex align-items-center justify-content-center"
+                                    style={{
+                                        width: '50px',
+                                        height: '50px',
+                                        backgroundColor: '#ffc107',
+                                        fontSize: '1.2rem',
+                                        fontWeight: 'bold',
+                                        color: '#000'
+                                    }}
+                                >
+                                    03
+                                </div>
+                            </div>
+                            <div className="process-content">
+                                <h5 className="text-warning mb-2 fw-bold">Tokenomics That Sustain</h5>
+                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                    Emissions curves, sinks, fee capture, and dashboards so tokens drive utility—not just speculation
+                                </p>
+                            </div>
+                        </div>
+                        
+                        {/* Process Item 4 */}
+                        <div className="process-item d-flex align-items-start mb-4">
+                            <div className="process-number me-3">
+                                <div 
+                                    className="rounded-circle d-flex align-items-center justify-content-center"
+                                    style={{
+                                        width: '50px',
+                                        height: '50px',
+                                        backgroundColor: '#ffc107',
+                                        fontSize: '1.2rem',
+                                        fontWeight: 'bold',
+                                        color: '#000'
+                                    }}
+                                >
+                                    04
+                                </div>
+                            </div>
+                            <div className="process-content">
+                                <h5 className="text-warning mb-2 fw-bold">On-Chain Payments & Treasury Ops</h5>
+                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                    Stablecoin rails, invoicing, reconciliation, and policy-driven payouts that finance teams trust
+                                </p>
+                            </div>
+                        </div>
+                        
+                        {/* Process Item 5 */}
+                        <div className="process-item d-flex align-items-start">
+                            <div className="process-number me-3">
+                                <div 
+                                    className="rounded-circle d-flex align-items-center justify-content-center"
+                                    style={{
+                                        width: '50px',
+                                        height: '50px',
+                                        backgroundColor: '#ffc107',
+                                        fontSize: '1.2rem',
+                                        fontWeight: 'bold',
+                                        color: '#000'
+                                    }}
+                                >
+                                    05
+                                </div>
+                            </div>
+                            <div className="process-content">
+                                <h5 className="text-warning mb-2 fw-bold">Fixed Scope, Fixed Price, Warranty</h5>
+                                <p className="text-light mb-0" style={{ fontSize: '0.95rem' }}>
+                                    Clear inclusions/exclusions milestones billing, and a post-launch stabilisation window (We deliver Bug Bounties as and when required)
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
-                    {/* Background Animation */}
-                    <div className="how-we-background-animation"></div>
                 </div>
             </div>
         </div>
