@@ -54,12 +54,13 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
           <div className="d-flex align-items-center justify-content-between gap-2" style={{ height: 61 }}>
             {/* Brand */}
             <a
-              href="/"
+              href="https://www.altiorainfotech.com"
               aria-label="Home"
               onClick={goHome}
               className="d-inline-flex align-items-center rounded"
             >
               {logoOk ? (
+               
                 <img
                   src={logo}
                   alt="Logo"
@@ -68,6 +69,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                   className="rounded flex-shrink-0"
                   onError={() => setLogoOk(false)}
                 />
+              
               ) : (
                 <span
                   className="d-grid rounded text-black fw-bold"

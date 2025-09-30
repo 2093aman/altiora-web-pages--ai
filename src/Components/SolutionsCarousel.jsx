@@ -16,39 +16,47 @@ const SolutionsCarousel = () => {
             image: p4,
             description: "Altiora Infotech was interested in creating a bug tracker that is fast, modern, and automated to enable the QA teams of businesses to report bugs in a quick manner on both web and mobile platforms. It aimed at establishing a clean interface with minimal friction allowing the QA engineers to spend more time on tracking down errors as opposed to wrestling with reporting applications. Through AI automation, the platform reduces the repetitiveness of duties, enhances accuracy of reporting and saves a lot of time to log and fix problems.",
             stats: [
-                { value: "1K+", label: "Bugs logged" },
-                { value: "1K", label: "Users" },
-                { value: "1M", label: "Request Server" }
+                { value: "10K+", label: "Bugs logged" },
+                { value: "60k", label: " Users" },
+                { value: "40M", label: "Request Server" }
             ]
         },
         {
-            title: "AI-Powered Customer Support System",
+            title: "Smarter Procurement with AI",
             image: p2,
-            description: "Implemented an intelligent customer support platform that uses natural language processing to understand and respond to customer queries automatically. The system learns from interactions and improves response accuracy over time, reducing response time by 70% and improving customer satisfaction significantly.",
+            description: `Challenge
+The client needed a faster and more reliable way to evaluate vendors, handle RFQs, and maintain accurate supplier data. Manual checks were time-consuming, prone to errors, and created bottlenecks in decision-making.
+
+Solution
+We developed an AI-powered procurement platform that automated vendor discovery, matched requirements with supplier capabilities using NLP, and generated automated RFQs. The system also integrated external data sources to enrich vendor profiles and simplify comparison.`,
             stats: [
-                { value: "5K+", label: "Queries Handled" },
-                { value: "2K", label: "Active Users" },
-                { value: "95%", label: "Accuracy Rate" }
+                { value: "2K+", label: "Request Server" },
+                { value: "70%", label: "faster RFQ cycle completion" },
+                { value: "30%", label: "reduction in sourcing costs" }
             ]
         },
         {
-            title: "Predictive Analytics for E-commerce",
+            title: "AI-Powered Retail Discovery",
             image: p3,
-            description: "Developed an AI-driven predictive analytics solution that helps e-commerce businesses forecast demand, optimize inventory, and personalize customer experiences. The platform analyzes historical data and real-time trends to provide actionable insights that drive sales and reduce operational costs.",
+            description: `Challenge
+A retail marketplace app wanted to provide customers with a better way to search and shop locally. Product data was inconsistent, listings lacked detail, and customers struggled to find relevant products quickly.
+
+Solution
+We implemented an AI-driven product discovery engine with chatbot and image search support. The solution auto-generated product descriptions for retailers, streamlined catalog uploads, and created a seamless shopping experience for end-users.`,
             stats: [
-                { value: "3K+", label: "Products Tracked" },
-                { value: "500+", label: "Clients" },
-                { value: "40%", label: "Cost Reduction" }
+                { value: "10K+", label: "product listings auto-enhanced" },
+                { value: "60%", label: "faster merchant onboarding" },
+                { value: "40%", label: "improvement in product search accuracy" }
             ]
         },
         {
-            title: "Automated Content Generation Platform",
+            title: "Online Testing & Student Management Platform",
             image: p1,
-            description: "Created an advanced AI content generation system that produces high-quality marketing copy, product descriptions, and social media content. The platform uses machine learning to understand brand voice and generates content that resonates with target audiences while maintaining consistency across all channels.",
+            description: "Our client Envisaged a product that would facilitate online testing and grading to classroom instructors. We worked out a strong platform where the results are displayed in real-time, instructors, parents, school, and administrators can access it in different levels, and the database is scalable. The presence of interactive features like push/pull notifications, tracking of activities, and meeting/event reminders contributed to the increased level of engagement, allowing to manage the performance of students and academic activities more intelligently.",
             stats: [
-                { value: "10K+", label: "Content Pieces" },
-                { value: "800+", label: "Brands" },
-                { value: "85%", label: "Time Saved" }
+                { value: "20K+", label: "Enrolments" },
+                { value: "25K+", label: "File Stored" },
+                { value: "3+", label: "Years of Usage" }
             ]
         }
     ];

@@ -53,10 +53,11 @@ const Web3Page = () => {
               </p>
 
               <div className="d-flex flex-wrap gap-3">
-                <a className="btn btn-warning btn-lg px-4" href="https://www.altiorainfotech.com/developers">
+                <a className="btn btn-lg px-4 .btn-gradient" href="https://www.altiorainfotech.com/developers">
                   Start Your Web3 Journey
                 </a>
-                <a className="btn btn-outline-light btn-lg px-4" href="https://www.altiorainfotech.com/contact">
+                <a className="btn btn-outline-light btn-lg px-4 .btn-gradient
+" href="https://www.altiorainfotech.com/contact">
                   Contact Us
                 </a>
               </div>
