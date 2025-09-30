@@ -28,8 +28,8 @@ const AICarouselSection = () => {
             description: "From ideation to deployment, We build AI - integrated digital products designed for scale, speed, and innovation."
         },
         {
-            title: data,
-            image: "https://cdn.prod.website-files.com/64f989999025f3e47402a969/6800915f388a333a54536c58_(2)%20How%20AI%20is%20Transforming%20the%20Software%20Development%20Lifecycle%20(SDLC).png", 
+            title:    `Data Science & AI Analytics`,
+            image: data, 
             description: "Turn complex data into actionable intelligence using advanced analytics of AI that are growth and efficiency-oriented."
         },
         {
@@ -50,6 +50,9 @@ const AICarouselSection = () => {
     }, [slides.length]);
 
     // Handle touch events for mobile swipe
+
+
+    // lkdfkdfdsmfskd
     const handleTouchStart = (e) => {
         setTouchStart(e.touches[0].clientX);
     };
