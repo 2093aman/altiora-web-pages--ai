@@ -1,36 +1,42 @@
 import React, { useState, useEffect } from 'react';
-
+import cloud from '../assets/cloud-and-dev.webp';
+import aiinfuse from '../assets/ai-infused.webp';
+import agenticai from '../assets/Agentic-AI-Solutions.webp';
+import data from '../assets/data-scince.webp';
+import endToend from '../assets/End-to-End-to-Software-development.webp';
 {/* Add this section to your AIPage.jsx */}
 const AICarouselSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
+  
 
     const slides = [
         {
-            title: "AI-Infused Web & Mobile Applications",
-            image: "https://www.addevice.io/storage/ckeditor/uploads/images/65f82dcd3866a_ai.in.mobile.app.development.1920.1080.png",
-            description: "Intelligent applications powered by AI"
+            title: "Cloud & DevOps for AI ",
+            image: cloud,
+            description: "Smarter cloud infrastructure with AI driven DevOps pipelines for seamless &  more efficient deployments."
         },
         {
-            title: "Cloud & DevOps for AI",
-            image: "https://media.licdn.com/dms/image/v2/D4D12AQGal6nT6qi1KA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1715878943603?e=2147483647&v=beta&t=kcptMbL5yEFHy6mVddfJMX-QMjvyzAAisgu3R41ggMw",
-            description: "Scalable cloud infrastructure for AI solutions"
+            title: "AI Infused Web & Mobile Applications",
+            image: aiinfuse,
+            description: "Elevating every Interaction using AI powered personalization, automation, and predictive analytics."
         },
         {
-            title: "Agentic AI solutions",
-            image: "https://www.mooglelabs.com/uploads/posts/1745216336Agentic%20Artificial%20Intelligence%20Solutions.jpg",
-            description: "Transform data into actionable insights"
+            title: "End to End  Ai Software Development",
+            image: endToend,
+            description: "From ideation to deployment, We build AI - integrated digital products designed for scale, speed, and innovation."
         },
         {
-            title: "End to end AI Software Development",
+            title: data,
             image: "https://cdn.prod.website-files.com/64f989999025f3e47402a969/6800915f388a333a54536c58_(2)%20How%20AI%20is%20Transforming%20the%20Software%20Development%20Lifecycle%20(SDLC).png", 
-            description: "Advanced ML models for business automation"
+            description: "Turn complex data into actionable intelligence using advanced analytics of AI that are growth and efficiency-oriented."
         },
         {
-            title: "Data Science & Analytics",
-            image: "path/to/your/image5.jpg",
-            description: "Data-driven decisions with AI analytics"
+            title: "Agentic AI Solutions ",
+            image: agenticai,
+            description: "Be more productive by use of AI agents who will automate and provide contextual intelligence in real-time."
+
         },
     ];
 
@@ -236,7 +242,7 @@ const AICarouselSection = () => {
                                                 fontWeight: '600'
                                             }}
                                         >
-                                            Add Image Here
+                                          
                                         </div>
                                     </div>
 

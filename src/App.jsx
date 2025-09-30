@@ -8,22 +8,34 @@ import Navbar from './Components/Navbar.jsx';
 import Footer from './Components/Footer.jsx';
 import Chatbot from './Components/Chatbot.jsx';
 
-export default function App() {
-  const [currentPage, setCurrentPage] = useState('web3'); // default
+const ALLOWED = ['web3', 'web2', 'ai', 'home'];
 
-  // set from URL hash on first load
+export default function App() {
+  const [currentPage, setCurrentPage] = useState('ai'); // default = AI
+
+  // First load: honor hash if valid; otherwise force #ai
   useEffect(() => {
-    const initial = (window.location.hash || '').replace('#','');
-    if (['web3','web2','ai','home'].includes(initial)) {
+    const initial = (window.location.hash || '').replace('#', '');
+    if (ALLOWED.includes(initial)) {
       setCurrentPage(initial);
+    } else {
+      window.location.hash = 'ai';
+      setCurrentPage('ai');
     }
   }, []);
 
-  // listen for manual hash changes (back/forward)
+  // Keep URL hash synced with state (so direct links/back/forward are neat)
+  useEffect(() => {
+    if (window.location.hash.replace('#', '') !== currentPage) {
+      window.location.hash = currentPage;
+    }
+  }, [currentPage]);
+
+  // React to manual hash changes (back/forward or user edits)
   useEffect(() => {
     const onHashChange = () => {
-      const page = (window.location.hash || '').replace('#','');
-      if (['web3','web2','ai','home'].includes(page)) setCurrentPage(page);
+      const page = (window.location.hash || '').replace('#', '');
+      if (ALLOWED.includes(page)) setCurrentPage(page);
     };
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);
@@ -35,7 +47,7 @@ export default function App() {
       case 'web2': return <Web2Page />;
       case 'ai':   return <AIPage />;
       case 'home': return <HomePage />;
-      default:     return <Web3Page />;
+      default:     return <AIPage />; // safe fallback
     }
   };
 
