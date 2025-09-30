@@ -50,6 +50,9 @@ const AICarouselSection = () => {
     }, [slides.length]);
 
     // Handle touch events for mobile swipe
+
+
+    // lkdfkdfdsmfskd
     const handleTouchStart = (e) => {
         setTouchStart(e.touches[0].clientX);
     };
