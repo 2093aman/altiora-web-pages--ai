@@ -75,9 +75,9 @@ const LINK_MAP = {
   career: '/careers',
   contact: '/contact',
   blog: '/blog',
-  'web3 & blockchain': '/developers',
-  'ai & data': '/developers',
-  'web 2.0': '/developers',
+  'web3 & blockchain': 'https://web3.altiorainfotech.com/',
+  'ai & data': 'https://ai.altiorainfotech.com/',
+  'web 2.0': 'https://web2.altiorainfotech.com/',
   'mobile & web': '/developers',
 };
 
