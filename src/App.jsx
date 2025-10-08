@@ -56,7 +56,7 @@ export default function App() {
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <main className="flex-grow-1">{renderPage()}</main>
       <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <Chatbot />
+      {currentPage !== 'ai' && <Chatbot />}
     </div>
   );
 }
